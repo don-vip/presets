@@ -1,90 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" version="2.2_2013-03-25" author="HOT (Humanitarian OpenStreetMap Team)" shortdescription="HDM Data Model for HOT field surveys" description="HDM Data Model adapted for Eurosha from OTI STM020 program in Haiti">
-	<group name="HOT" fr.name="HOT" en.name="HOT">
-		<!-- -->
-		<item name="Building digitizing" fr.name="Digitalisation de batiment" en.name="Building digitizing" icon="styles/standard/misc/landmark/building.png" type="closedway,relation">
-			<label text="** Edit a building based on imagery **" fr.text="** Creer/mettre a jour un batiment a partir d'une imagerie **" en.text="** Edit/modify a building based on imagery **"/>
-			<link href="http://wiki.openstreetmap.org/wiki/Key:building" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:building" pt_br.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:building"/>
-			<space/>
-			<key key="building" value="yes"/>
-			<label text="________________________________________"/>
-			<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-			<space/>
-			<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-			<space/>
-			<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-			<space/>
-			<label text="________________________________________"/>
-			<space/>
-			<text key="note" text="Note" fr.text="Notes"/>
-			<space/>
-		</item>
-		<item name="Building features" fr.name="Caractéristiques du bâtiment" en.name="Building features" icon="styles/standard/misc/landmark/building.png" type="closedway,relation">
-			<label text="** Edit/modify a building **" fr.text="** Créer/mettre à jour un bâtiment **" en.text="** Edit/modify a building **"/>
-			<label text="________________________________________"/>
-			<label text="ADDRESS DETAILS" fr.text="ADRESSE DETAILS" en.text="ADDRESS DETAILS"/>
-			<label text="BUILDING" fr.text="BATIMENT" en.text="BUILDING"/>
-			<space/>
-			<label text="If the building contains several kinds of activities, let the 'yes' default value" fr.text="Si le bâtiment comprend plusieurs activités, laisser la valeur par défaut 'yes'" en.text="If the building contains several kinds of activities, let the 'yes' default value"/>
-			<space/>
-			<combo key="building" text="Building main use" fr.text="Usage principal du bâtiment" en.text="Building main use" values="yes,collapsed,church,commercial,farm,garage,greenhouse,hospital,hotel,industrial,office,panel_house,public,residential,school,storage_tank,supermarket,warehouse," display_values="yes,collapsed,church,commercial,farm,garage,greenhouse,hospital,hotel,industrial,office,panel house,public,residential,school,storage tank,supermarket,warehouse," fr.display_values="oui,détruit ou abîmé,lieu de culte,commercial,ferme,garage,serre,hôpital,hôtel,industriel,bureau,pré-fabriqué,public,résidentiel,école,stockage de liquides,supermarché,entrepôt" en.display_values="yes,collapsed,church,commercial,farm,garage,greenhouse,hospital,hotel,industrial,office,panel house,public,residential,school,storage tank,supermarket,warehouse," default="yes"/>
-			<link href="http://wiki.openstreetmap.org/wiki/Key:building" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:building" pt_br.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:building"/>
-			<space/>
-			<combo key="building:levels" text="Building levels" fr.text="Nombre de niveaux" values="1,2,3,4,5" display_values="1,2,3,4,5"/>
-			<space/>
-			<optional>
-				<combo key="building:material" text="Building Material" fr.text="Matériaux du Bâtiment" values="plaster,brick,wood,concrete,glass,stone,metal,tent,timber_framing" display_values="plaster,brick,wood,concrete,glass,stone,metal,tent,timber_framing" fr.display_values="plâtre,brique,bois,béton,verre,pierre,métal,tent,ossature bois"/>
-				<combo key="building:roof" text="Roof Material" fr.text="Matériaux du toit" values="tiles,concrete,tar_paper,metal,wood,plastic,stone,canvas,pvc" display_values="tiles,concrete,tar_paper,metal,wood,plastic,stone,canvas,pvc" fr.display_values="tuiles,béton,papier goudronné,métal,bois,plastique,pierre,toile,pvc"/>
-				<space/>
-				<check key="historic" text="Historic interest" fr.text="Intérêt historique" en.text="Historic interest" default="off"/>
-			</optional>
-			<label text="________________________________________"/>
-			<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (géométrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-			<space/>
-			<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe déjà, ajouter la nouvelle après une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-			<space/>
-			<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-			<space/>
-			<label text="________________________________________"/>
-			<space/>
-			<text key="note" text="Note" fr.text="Notes"/>
-			<space/>
-		</item>
-		<group name="Places" fr.name="Lieux" icon="presets/places.png">
-			<item name="City" icon="presets/places.png" type="node">
-				<label text="Edit City"/>
-				<space/>
-				<key key="place" value="city"/>
-				<text key="name" text="Name" default="" delete_if_empty="true"/>
-				<space/>
-				<text key="wikipedia" text="Wikipedia" default="" delete_if_empty="true"/>
-				<text key="population" text="Population" default="" delete_if_empty="true"/>
-				<text key="addr:postcode" text="Post code" default="" delete_if_empty="true"/>
-				<text key="website" text="Website" default="" delete_if_empty="true"/>
-				<space/>
-				<label text="________________________________________"/>
-				<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-				<space/>
-				<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-				<space/>
-				<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-				<space/>
-				<label text="________________________________________"/>
-				<space/>
-				<text key="note" text="Note" fr.text="Notes"/>
-				<space/>
-			</item>
-			<item name="Town" icon="presets/places.png" type="node">
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" version="2.2_2013-03-25" author="UNHCR" shortdescription="Data Model for camp mapping" description="Data Model for camp mapping">
+	<group name="UNHCR" fr.name="UNHCR-campmapping" en.name="UNHCR-campmapping" icon="presets/tent.png">
+		<group name="Refugee Camp and administrative organisation" fr.name="Lieux et organisation administrative" icon="presets/tent.png">
+			<item name="Camp location" icon="presets/tent.png" type="node">
 				<link href="http://wiki.openstreetmap.org/wiki/Tag:place=town" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:place=town" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:place=town"/>
-				<label text="Edit Town"/>
+				<label text="Refugee Camp"/>
 				<space/>
 				<key key="place" value="town"/>
+				<key key="refugee" value="yes"/>
 				<text key="name" text="Name" default="" delete_if_empty="true"/>
+				<text key="loc_name" text="Name in local language" fr.text="Nom en langue locale" en.text="Name in local language"/>
+				<text key="alt_name" text="Alternative name" fr.text="Nom populaire alternatif" en.text="Alternative name"/>
+				<text key="short_name" text="Abbreviation name" fr.text="Abreviation du nom" en.text="Abbreviation name"/>
+				<text key="old_name" text="Old name" fr.text="Ancien nom" en.text="Old name"/>
 				<space/>
 				<text key="wikipedia" text="Wikipedia" default="" delete_if_empty="true"/>
 				<text key="population" text="Population" default="" delete_if_empty="true"/>
-				<text key="addr:postcode" text="Post code" default="" delete_if_empty="true"/>
-				<text key="website" text="Website" default="" delete_if_empty="true"/>
+				<text key="addr:postcode" text="Post code - UNHCR Registration" default="" delete_if_empty="true"/>
+				<text key="website" text="Website - data.unhcr.org" default="" delete_if_empty="true"/>
 				<space/>
 				<label text="________________________________________"/>
 				<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
@@ -98,17 +31,19 @@
 				<text key="note" text="Note" fr.text="Notes"/>
 				<space/>
 			</item>
-			<item name="Suburb" icon="presets/places.png" type="node">
+			<item name="Camp Suburb / sectors/ module -level1" icon="presets/places.png" type="closedway,relation">
 				<link href="http://wiki.openstreetmap.org/wiki/Tag:place=suburb" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:place=suburb"/>
-				<label text="Edit Suburb"/>
+				<label text="Edit Camp Suburb / sector / module"/>
 				<space/>
 				<key key="place" value="suburb"/>
+				<key key="refugee" value="yes"/>
 				<text key="name" text="Name" default="" delete_if_empty="true"/>
+				<text key="loc_name" text="Name in local language" fr.text="Nom en langue locale" en.text="Name in local language"/>
+				<text key="alt_name" text="Alternative name" fr.text="Nom populaire alternatif" en.text="Alternative name"/>
+				<text key="short_name" text="Abbreviation name" fr.text="Abreviation du nom" en.text="Abbreviation name"/>
+				<text key="old_name" text="Old name" fr.text="Ancien nom" en.text="Old name"/>
 				<space/>
-				<text key="wikipedia" text="Wikipedia" default="" delete_if_empty="true"/>
-				<text key="population" text="Population" default="" delete_if_empty="true"/>
-				<text key="addr:postcode" text="Post code" default="" delete_if_empty="true"/>
-				<text key="website" text="Website" default="" delete_if_empty="true"/>
+				<text key="addr:postcode" text="Post code - UNHCR Registration" default="" delete_if_empty="true"/>
 				<label text="________________________________________"/>
 				<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
 				<space/>
@@ -121,17 +56,19 @@
 				<text key="note" text="Note" fr.text="Notes"/>
 				<space/>
 			</item>
-			<item name="Neighborhood" fr.name="Quartier" icon="presets/places.png" type="node">
+			<item name="Camp Neighborhood / blocks -level2" fr.name="Quartier" icon="presets/places.png" type="closedway,relation">
 				<link href="http://wiki.openstreetmap.org/wiki/Tag:place%3Dneighbourhood"/>
-				<label text="Edit neighbourhood" fr.text="Creer ou mettre a jour un quartier"/>
+				<label text="Edit Camp Neighborhood / blocks -level2" fr.text="Creer ou mettre a jour un quartier"/>
 				<space/>
 				<key key="place" value="neighbourhood"/>
+				<key key="refugee" value="yes"/>
 				<text key="name" text="Name" default="" delete_if_empty="true"/>
+				<text key="loc_name" text="Name in local language" fr.text="Nom en langue locale" en.text="Name in local language"/>
+				<text key="alt_name" text="Alternative name" fr.text="Nom populaire alternatif" en.text="Alternative name"/>
+				<text key="short_name" text="Abbreviation name" fr.text="Abreviation du nom" en.text="Abbreviation name"/>
+				<text key="old_name" text="Old name" fr.text="Ancien nom" en.text="Old name"/>
 				<space/>
-				<text key="wikipedia" text="Wikipedia" default="" delete_if_empty="true"/>
-				<text key="population" text="Population" default="" delete_if_empty="true"/>
-				<text key="addr:postcode" text="Post code" default="" delete_if_empty="true"/>
-				<text key="website" text="Website" default="" delete_if_empty="true"/>
+				<text key="addr:postcode" text="Post code - UNHCR Registration" default="" delete_if_empty="true"/>
 				<label text="________________________________________"/>
 				<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
 				<space/>
@@ -145,6 +82,48 @@
 				<space/>
 			</item>
 			<separator/>
+		</group>
+		<!-- Camps and its organisation -->
+		<item name="Building and Shelter digitizing" fr.name="Digitalisation de batiment" en.name="Building and Shelter digitizing" icon="styles/standard/misc/landmark/building.png" type="closedway,relation">
+			<label text="** Edit a building/shelter based on imagery **" fr.text="** Creer/mettre a jour un batiment/abri a partir d'une imagerie **" en.text="** Edit/modify a building based on imagery **"/>
+			<link href="http://wiki.openstreetmap.org/wiki/Key:building" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:building" pt_br.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:building"/>
+			<space/>
+			<key key="building" value="yes"/>
+			<key key="refugee" value="yes"/>
+			<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+			<space/>
+			<label text="ADDRESS DETAILS" fr.text="ADRESSE DETAILS" en.text="ADDRESS DETAILS"/>
+			<text key="addr:housenumber" text="building number" fR.text="numero du batiment " eN.text="building number"/>
+			<text key="addr:street" text="street name" use_last_as_default="force" delete_if_empty="true"/>
+			<text key="addr:postcode" text="Post code - UNHCR Registration" default="" delete_if_empty="true"/>
+			<label text="BUILDING" fr.text="BATIMENT" en.text="BUILDING"/>
+			<space/>
+			<label text="If the building contains several kinds of activities, let the 'yes' default value" fr.text="Si le bâtiment comprend plusieurs activités, laisser la valeur par défaut 'yes'" en.text="If the building contains several kinds of activities, let the 'yes' default value"/>
+			<space/>
+			<combo key="building" text="Building main use" fr.text="Usage principal du bâtiment" en.text="Building main use" values="yes,collapsed,church,commercial,farm,garage,greenhouse,hospital,hotel,industrial,office,panel_house,public,residential,school,storage_tank,supermarket,warehouse," display_values="yes,collapsed,church,commercial,farm,garage,greenhouse,hospital,hotel,industrial,office,panel house,public,residential,school,storage tank,supermarket,warehouse," fr.display_values="oui,détruit ou abîmé,lieu de culte,commercial,ferme,garage,serre,hôpital,hôtel,industriel,bureau,pré-fabriqué,public,résidentiel,école,stockage de liquides,supermarché,entrepôt" en.display_values="yes,collapsed,church,commercial,farm,garage,greenhouse,hospital,hotel,industrial,office,panel house,public,residential,school,storage tank,supermarket,warehouse," default="yes"/>
+			<link href="http://wiki.openstreetmap.org/wiki/Key:building" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:building" pt_br.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:building"/>
+			<space/>
+			<combo key="building:levels" text="Building levels" fr.text="Nombre de niveaux" values="1,2,3,4,5" display_values="1,2,3,4,5"/>
+			<space/>
+			<optional>
+				<combo key="building:material" text="Building Material" fr.text="Matériaux du Bâtiment" values="plaster,brick,wood,concrete,glass,stone,metal,tent,timber_framing" display_values="plaster,brick,wood,concrete,glass,stone,metal,tent,timber_framing" fr.display_values="plâtre,brique,bois,béton,verre,pierre,métal,tent,ossature bois"/>
+				<combo key="building:roof" text="Roof Material" fr.text="Matériaux du toit" values="tiles,concrete,tar_paper,metal,wood,plastic,stone,canvas,pvc" display_values="tiles,concrete,tar_paper,metal,wood,plastic,stone,canvas,pvc" fr.display_values="tuiles,béton,papier goudronné,métal,bois,plastique,pierre,toile,pvc"/>
+				<space/>
+			</optional>
+			<label text="________________________________________"/>
+			<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (géométrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+			<space/>
+			<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe déjà, ajouter la nouvelle après une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+			<space/>
+			<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+			<space/>
+			<label text="________________________________________"/>
+			<space/>
+			<text key="note" text="Note" fr.text="Notes"/>
+			<space/>
+		</item>
+		<!-- Building and Shelters-->
+		<group name="Other places of interest" fr.name="Autres Lieux" icon="presets/places.png">
 			<item name="Village" icon="presets/places.png" type="node">
 				<label text="Edit Village"/>
 				<space/>
@@ -212,7 +191,7 @@
 				<space/>
 			</item>
 			<separator/>
-			<item name="Locality" icon="presets/locality.png" type="node">
+			<item name="Locality" icon="presets/places.png" type="node">
 				<link href="http://wiki.openstreetmap.org/wiki/Tag:place=locality" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:place=locality"/>
 				<label text="Edit Locality"/>
 				<space/>
@@ -233,7 +212,7 @@
 				<space/>
 			</item>
 		</group>
-		<!-- Places -->
+		<!-- Other Places -->
 		<group name="Transportation" fr.name="Transports" en.name="Transportation" icon="presets/railway.png" type="way">
 			<group name="Roads" fr.name="Voirie" en.name="Roads" icon="presets/way_secondary.png">
 				<item name="Roads and streets" fr.name="Routes et rues" en.name="Roads and streets" icon="presets/way_secondary.png" type="way">
@@ -254,7 +233,47 @@
 						<check key="narrow" text="Narrow" fr.text="Etroite" default="off" delete_if_empty="true"/>
 						<check key="lit" text="Lit" fr.text="Eclaire" default="off" delete_if_empty="true"/>
 						<check key="embankment" text="Embanked" fr.text="Remblai" default="off" delete_if_empty="true"/>
-					</optional>
+						</optional>
+					<label text="** Edit/modify road restrictions **" fr.text="** Creer/mettre a jour des restrictions de voirie **" en.text="** Edit/modify road restrictions **"/>
+					<label text="________________________________________"/>
+					<label text="ROAD RESTRICTIONS" fr.text="RESTRICTIONS DE VOIRIE" en.text="ROAD RESTRICTIONS"/>
+					<link href="http://wiki.openstreetmap.org/wiki/Key:access" da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access" de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:access" it.href="http://wiki.openstreetmap.org/wiki/IT:Key:access" ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:access" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:access" ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:access" sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access"/>
+					<check key="oneway" text="Oneway" default="off" delete_if_empty="true"/>
+					<check key="toll" text="Toll" default="off" delete_if_empty="true"/>
+					<check key="noexit" text="No exit (cul-de-sac)" default="off" delete_if_empty="true"/>
+					<label text="Transport mode restrictions"/>
+					<combo key="access" text="General Access" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" default="" delete_if_empty="true"/>
+					<combo key="foot" text="Foot" values="yes,official,designated,permissive,destination,delivery,private,no" default="" delete_if_empty="true"/>
+					<combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,no" default="" delete_if_empty="true"/>
+					<label text="Vehicles per type"/>
+					<combo key="vehicle" text="All vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" default="" delete_if_empty="true"/>
+					<combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,no" default="" delete_if_empty="true"/>
+					<combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" default="" delete_if_empty="true"/>
+					<combo key="motorcycle" text="Motorcycle" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" default="" delete_if_empty="true"/>
+					<combo key="motorcar" text="Motorcar" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" default="" delete_if_empty="true"/>
+					<combo key="goods" text="Light Commercial Vehicles (goods)" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" default="" delete_if_empty="true"/>
+					<combo key="hgv" text="Heavy Goods Vehicles (hgv)" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" default="" delete_if_empty="true"/>
+					<label text="Vehicles per use"/>
+					<combo key="agricultural" text="Agricultural" values="yes,official,designated,destination,permissive,private,no" default="" delete_if_empty="true"/>
+					<combo key="emergency" text="Emergency vehicles" values="yes,official,designated,destination,permissive,private,no" default="" delete_if_empty="true"/>
+					<combo key="hov" text="High-occupancy vehicles (hov)" values="yes,official,designated,destination,permissive,private,no" default="" delete_if_empty="true"/>
+					<combo key="psv" text="Public Service Vehicles (psv)" values="yes,official,designated,destination,permissive,private,no" default="" delete_if_empty="true"/>
+					<text key="maxspeed" text="Max. speed (km/h)" default="" delete_if_empty="true"/>
+					<text key="minspeed" text="Min. speed (km/h)" default="" delete_if_empty="true"/>
+					<text key="maxweight" text="Max. weight (tonnes)" default="" delete_if_empty="true"/>
+					<text key="maxaxleload" text="Max. axleload (tonnes)" default="" delete_if_empty="true"/>
+					<text key="maxheight" text="Max. height (meters)" default="" delete_if_empty="true"/>
+					<text key="maxwidth" text="Max. width (meters)" default="" delete_if_empty="true"/>
+					<text key="maxlength" text="Max. length (meters)" default="" delete_if_empty="true"/>
+					<label text="** Edit/modify road practicability **" fr.text="** Creer/mettre a jour des praticabilite de voirie **"/>
+					<label text="________________________________________"/>
+					<label text="ROAD PRACTICABILITY" fr.text="Praticabilite DE VOIRIE"/>
+					<link href="http://wiki.openstreetmap.org/wiki/Humanitarian_OSM_Tags/practicability"/>
+					<combo key="practicability:truck+trailer" text="truck+trailer" values="yes,no,seasonal,limited" default="" delete_if_empty="true"/>
+					<combo key="practicability:heavy_truck" text="heavy_truck" values="yes,no,seasonal,limited" default="" delete_if_empty="true"/>
+					<combo key="practicability:light_truck" text="light_truck" values="yes,no,seasonal,limited" default="" delete_if_empty="true"/>
+					<combo key="practicability:4x4" text="4x4" values="yes,no,seasonal,limited" default="" delete_if_empty="true"/>
+					<combo key="practicability:motorcycle" text="motorcycle" values="yes,no,seasonal,limited" default="" delete_if_empty="true"/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
 					<space/>
@@ -926,72 +945,6 @@
 				<!-- Aeroway -->
 			</group>
 			<!-- Transportation means -->
-			<item name="Road Restrictions" icon="presets/restrictions.png" type="node,way">
-				<label text="** Edit/modify road restrictions **" fr.text="** Creer/mettre a jour des restrictions de voirie **" en.text="** Edit/modify road restrictions **"/>
-				<label text="________________________________________"/>
-				<label text="ROAD RESTRICTIONS" fr.text="RESTRICTIONS DE VOIRIE" en.text="ROAD RESTRICTIONS"/>
-				<link href="http://wiki.openstreetmap.org/wiki/Key:access" da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access" de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:access" it.href="http://wiki.openstreetmap.org/wiki/IT:Key:access" ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:access" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:access" ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:access" sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access"/>
-				<check key="oneway" text="Oneway" default="off" delete_if_empty="true"/>
-				<check key="toll" text="Toll" default="off" delete_if_empty="true"/>
-				<check key="noexit" text="No exit (cul-de-sac)" default="off" delete_if_empty="true"/>
-				<label text="Transport mode restrictions"/>
-				<combo key="access" text="General Access" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" default="" delete_if_empty="true"/>
-				<combo key="foot" text="Foot" values="yes,official,designated,permissive,destination,delivery,private,no" default="" delete_if_empty="true"/>
-				<combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,no" default="" delete_if_empty="true"/>
-				<label text="Vehicles per type"/>
-				<combo key="vehicle" text="All vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" default="" delete_if_empty="true"/>
-				<combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,no" default="" delete_if_empty="true"/>
-				<combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" default="" delete_if_empty="true"/>
-				<combo key="motorcycle" text="Motorcycle" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" default="" delete_if_empty="true"/>
-				<combo key="motorcar" text="Motorcar" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" default="" delete_if_empty="true"/>
-				<combo key="goods" text="Light Commercial Vehicles (goods)" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" default="" delete_if_empty="true"/>
-				<combo key="hgv" text="Heavy Goods Vehicles (hgv)" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" default="" delete_if_empty="true"/>
-				<label text="Vehicles per use"/>
-				<combo key="agricultural" text="Agricultural" values="yes,official,designated,destination,permissive,private,no" default="" delete_if_empty="true"/>
-				<combo key="emergency" text="Emergency vehicles" values="yes,official,designated,destination,permissive,private,no" default="" delete_if_empty="true"/>
-				<combo key="hov" text="High-occupancy vehicles (hov)" values="yes,official,designated,destination,permissive,private,no" default="" delete_if_empty="true"/>
-				<combo key="psv" text="Public Service Vehicles (psv)" values="yes,official,designated,destination,permissive,private,no" default="" delete_if_empty="true"/>
-				<text key="maxspeed" text="Max. speed (km/h)" default="" delete_if_empty="true"/>
-				<text key="minspeed" text="Min. speed (km/h)" default="" delete_if_empty="true"/>
-				<text key="maxweight" text="Max. weight (tonnes)" default="" delete_if_empty="true"/>
-				<text key="maxaxleload" text="Max. axleload (tonnes)" default="" delete_if_empty="true"/>
-				<text key="maxheight" text="Max. height (meters)" default="" delete_if_empty="true"/>
-				<text key="maxwidth" text="Max. width (meters)" default="" delete_if_empty="true"/>
-				<text key="maxlength" text="Max. length (meters)" default="" delete_if_empty="true"/>
-				<label text="________________________________________"/>
-				<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-				<space/>
-				<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-				<space/>
-				<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-				<space/>
-				<label text="________________________________________"/>
-				<space/>
-				<text key="note" text="Note" fr.text="Notes"/>
-				<space/>
-			</item>
-			<item name="Road Practicability" type="node,way">
-				<label text="** Edit/modify road practicability **" fr.text="** Creer/mettre a jour des praticabilite de voirie **"/>
-				<label text="________________________________________"/>
-				<label text="ROAD PRACTICABILITY" fr.text="Praticabilite DE VOIRIE"/>
-				<link href="http://wiki.openstreetmap.org/wiki/Humanitarian_OSM_Tags/practicability"/>
-				<combo key="practicability:truck+trailer" text="truck+trailer" values="yes,no,seasonal,limited" default="" delete_if_empty="true"/>
-				<combo key="practicability:heavy_truck" text="truck+trailer" values="yes,no,seasonal,limited" default="" delete_if_empty="true"/>
-				<combo key="practicability:light_truck" text="truck+trailer" values="yes,no,seasonal,limited" default="" delete_if_empty="true"/>
-				<combo key="practicability:4x4" text="truck+trailer" values="yes,no,seasonal,limited" default="" delete_if_empty="true"/>
-				<combo key="practicability:motorcycle" text="truck+trailer" values="yes,no,seasonal,limited" default="" delete_if_empty="true"/>
-				<label text="________________________________________"/>
-				<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-				<space/>
-				<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-				<space/>
-				<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-				<space/>
-				<label text="________________________________________"/>
-				<space/>
-				<text key="note" text="Note" fr.text="Notes"/>
-				<space/>
-			</item>
 			<group name="Barriers" icon="presets/barrier.png">
 				<item name="Toll Booth" icon="presets/toll_station.png" type="node">
 					<link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=toll_booth" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:barrier=toll_booth" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:barrier=toll_booth" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:barrier=toll_booth" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:barrier=toll_booth" zh-hans.href="http://wiki.openstreetmap.org/wiki/Zh-hans:Tag:barrier=toll_booth"/>
@@ -1335,7 +1288,7 @@
 					<text key="name" text="Name"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<space/>
 					<check key="fee" text="For sale?" fr.text="A vendre?" default="off" delete_if_empty="true"/>
 					<space/>
@@ -1368,7 +1321,7 @@
 					<combo key="pump" text="Pumped or not" fr.text="avec pompe ou sans" values="powered,manual,no" display_values="powered,manual,no" fr.display_values="non-manuel,manuel,non"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<space/>
 					<combo key="condition" text="Condition" fr.text="Condition" values="good,fair,deficient" display_values="good,fair,deficient" fr.display_values="bon,moyen,mauvais"/>
 					<check key="disused" text="Disused" fr.text="Désaffecté" default="off"/>
@@ -1426,7 +1379,7 @@
 					<combo key="location" text="Location" fr.text="Localisation" values="underground,overground" values_context="pipeline" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
 					<space/>
@@ -1453,7 +1406,7 @@
 					<combo key="drinking_water" text="Drinking water" fr.text="Eau potable" en.text="Drinking water" values="yes,no" display_values="yes,no" fr.display_values="oui,non" en.display_values="yes,no"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
 					<space/>
@@ -1476,7 +1429,7 @@
 					<combo key="condition" text="Condition" fr.text="Condition" values="good,fair,deficient" display_values="good,fair,deficient" fr.display_values="bon,moyen,mauvais"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<space/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
@@ -1498,7 +1451,7 @@
 					<text key="name" text="Name" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
 					<space/>
@@ -1520,7 +1473,7 @@
 					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dshower" text="More info about showers" fr.text="Plus d'infos sur les douches" en.text="More info about showers"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<space/>
 					<combo key="access" text="Access" fr.text="Usage" values="yes,private,multifamily" display_values="public,private,multifamily" fr.display_values="publique,prive,plusieurs familles"/>
 					<space/>
@@ -1561,7 +1514,7 @@
 					<combo key="toilets:type" text="Toilet type" fr.text="Toilet type" values="flush,pit,chemical,bucket" display_values="flush,pit,chemical,bucket" fr.display_values="humide,latrine,chimique,seau"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<space/>
 					<combo key="access" text="Access" fr.text="Usage" values="yes,private,multifamily" display_values="public,private,multifamily" fr.display_values="publique,prive,plusieurs familles"/>
 					<space/>
@@ -1599,7 +1552,7 @@
 					<space/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
 					<space/>
@@ -1622,7 +1575,7 @@
 					<space/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
 					<space/>
@@ -1728,7 +1681,7 @@
 					<combo key="generator:output:battery_charging" text="battery charging" values="yes,2 W,3 kW,5 MW,7 GW" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
 					<space/>
@@ -1750,7 +1703,7 @@
 					<space/>
 					<text key="ref" text="Reference" default="" delete_if_empty="true"/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
 					<space/>
@@ -1771,7 +1724,7 @@
 					<text key="ref" text="Line reference" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
 					<space/>
@@ -1792,7 +1745,7 @@
 					<text key="ref" text="Reference" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
 					<space/>
@@ -1872,7 +1825,7 @@
 					<combo key="generator:method" text="Power source:" fr.text="Power source:" values="photovoltaic"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
 					<space/>
@@ -1896,7 +1849,7 @@
 					<text key="name" text="Name" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
 					<space/>
@@ -1916,7 +1869,7 @@
 					<text key="name" text="Name" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<check key="recycling:batteries" text="Batteries" default="off" delete_if_empty="true"/>
 					<check key="recycling:cans" text="Cans" default="off" delete_if_empty="true"/>
 					<check key="recycling:clothes" text="Clothes" default="off" delete_if_empty="true"/>
@@ -1980,7 +1933,7 @@
 					<text key="name" text="Name" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<space/>
 					<check key="disused" text="Disused" fr.text="Désaffecté" default="off"/>
 					<check key="abandoned" text="Abandoned" fr.text="Abandonné" default="off"/>
@@ -2011,7 +1964,7 @@
 					<text key="ref" text="Reference number" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<space/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
@@ -2029,392 +1982,6 @@
 			<!-- telecommunication -->
 		</group>
 		<!-- Utilities -->
-		<group name="Cultural and social" fr.name="Culturel et social" icon="presets/theater.png">
-			<group name="Place of worship" fr.name="Lieu de culte" en.name="Place of worship" icon="presets/church.png">
-				<item name="Place of worship" fr.name="Lieu de culte" en.name="Place of worship" type="node,relation" icon="presets/church.png">
-					<key key="amenity" value="place_of_worship"/>
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=place_of_worship" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=place_of_worship" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=place_of_worship" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=place_of_worship" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=place_of_worship" no.href="http://wiki.openstreetmap.org/wiki/No:Tag:amenity=place_of_worship" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=place_of_worship" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=place_of_worship" sv.href="http://wiki.openstreetmap.org/wiki/Sv:Tag:amenity=place_of_worship"/>
-					<label text="** Edit/modify a place of worship **" fr.text="** Creer/mettre a jour un lieu de culte **" en.text="** Edit/modify a place of worship **"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="PLACE OF WORSHIP" fr.text="LIEU DE CULTE" en.text="PLACE OF WORSHIP"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="religion" text="Religion" fr.text="Religion" en.text="Religion" values="christian,voodoo,muslim,buddhist,jewish,hindu,other" display_values="christian,voodoo,muslim,buddhist,jewish,hindu,other" fr.display_values="christianisme,vaudou,islam,bouddhisme,judaisme,hindouisme,autre" en.display_values="christian,voodoo,muslim,buddhist,jewish,hindu,other"/>
-					<combo key="denomination" text="Religion denomination" fr.text="Denomination du culte" en.text="Religion denomination" values="pentecostal,baptist,jehovahs_witnesses,adventist,catholic,protestant,methodist,others" display_values="pentecostal,baptist,jehovah's witnesses,adventist,catholic,protestant,methodist,others" fr.display_values="pencotiste,baptiste,temoins de jehovah,adventiste du 7eme jour,catholique,protestant,methodiste,autres" en.display_values="pentecostal,baptist,jehovah's witnesses,adventist,catholic,protestant,methodist,others"/>
-					<space/>
-					<check key="disused" text="Disused" fr.text="Désaffecté" default="off"/>
-					<check key="abandoned" text="Abandoned" fr.text="Abandonné" default="off"/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Graveyard" fr.name="Cimetiere appartenant a un lieu de culte" en.name="Graveyard" icon="presets/graveyard.png" type="node,closedway,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=grave_yard" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:amenity=grave_yard" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=grave_yard" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=grave_yard"/>
-					<label text="** Edit/modify a graveyard **" fr.text="** Creer/mettre a jour un cimetiere appartenant a un lieu de culte **" en.text="** Edit/modify a graveyard **"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="GRAVEYARD" fr.text="CIMETIERE APPARTENANT A UN LIEU DE CULTE" en.text="GRAVEYARD"/>
-					<key key="amenity" value="grave_yard"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-			</group>
-			<!-- Place of worship -->
-			<group name="Community Center" fr.name="Community Center" icon="presets/community_centre.png">
-				<item name="Community Centre" fr.name="Centre communautaire" icon="presets/community_centre.png" type="node,closedway">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=community_centre" da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:amenity=community_centre" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=community_centre" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=community_centre" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=community_centre" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=community_centre"/>
-					<label text="Community Centre" fr.text="centre communautaire"/>
-					<space/>
-					<key key="amenity" value="community_centre"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Fr 08:30-20:00,Tu-Su 08:00-15:00; Sa 08:00-12:00" default="" delete_if_empty="true"/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-			</group>
-			<!-- Social and communautary facilities" -->
-			<group name="Culture" icon="presets/theater.png">
-				<item name="Museum" icon="presets/State_Public.png" type="node,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=museum" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:tourism=museum"/>
-					<label text="Edit Museum"/>
-					<key key="tourism" value="museum"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<text key="wikipedia" text="Wikipedia" default="" delete_if_empty="true"/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Cinema" icon="presets/cinema.png" type="node,closedway,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=cinema" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=cinema" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=cinema" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=cinema" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=cinema"/>
-					<label text="Edit Cinema"/>
-					<key key="amenity" value="cinema"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Theatre" icon="presets/theater.png" type="node,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=theatre" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=theatre" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=theatre" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=theatre"/>
-					<label text="Edit Theatre"/>
-					<key key="amenity" value="theatre"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Library" icon="styles/standard/shop/rental/library.png" type="node,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=library" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=library" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=library" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=library" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=library" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=library"/>
-					<label text="Edit Library"/>
-					<key key="amenity" value="library"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Arts Centre" icon="presets/arts_centre.png" type="node,closedway,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=arts_centre" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=arts_centre" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=arts_centre" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=arts_centre"/>
-					<label text="Edit Arts Centre"/>
-					<key key="amenity" value="arts_centre"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator name" fr.text="Operateur" en.text="Operator name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Artwork" icon="presets/arts_centre.png" type="node,way,closedway">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=artwork" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=artwork" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:tourism=artwork" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:tourism=artwork" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:tourism=artwork"/>
-					<label text="Edit Artwork"/>
-					<key key="tourism" value="artwork"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-			</group>
-			<!-- Culture -->
-			<group name="Historic Places" icon="presets/State_Tourist.png">
-				<item name="Castle" fr.name="Fort" icon="presets/State_Tourist.png" type="node,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:historic=castle" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:historic=castle"/>
-					<label text="Edit Castle" fr.text="Creer ou mettre a jour un fort"/>
-					<key key="historic" value="castle"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="wikipedia" text="Wikipedia" default="" delete_if_empty="true"/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Monument" icon="presets/monument.png" type="node,relation">
-					<label text="Edit Monument"/>
-					<key key="historic" value="monument"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Memorial" icon="presets/memorial.png" type="node,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:historic=memorial" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:historic=memorial"/>
-					<label text="Edit Memorial"/>
-					<key key="historic" value="memorial"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-			</group>
-			<!-- Historic Places -->
-			<group name="Sport Facilities" icon="presets/soccer.png">
-				<item name="Pitch" icon="presets/pitch.png" type="node,closedway">
-					<label text="Edit Pitch"/>
-					<key key="leisure" value="pitch"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="select sport:"/>
-					<space/>
-					<combo key="sport" text="sport" values="multi,american_football,baseball,basketball,climbing,cockfighting,golf,gymnastics,hockey,motor,skating,soccer,tennis" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Stadium" icon="presets/stadium.png" type="closedway">
-					<label text="Edit Stadium"/>
-					<key key="leisure" value="stadium"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="select sport:"/>
-					<space/>
-					<combo key="sport" text="sport" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,boules,bowls,canadian_football,canoe,climbing,cricket,cricket_nets,croquet,cycling,dog_racing,equestrian,gaelic_football,golf,gymnastics,hockey,horse_racing,motor,pelota,racquet,rugby_league,rugby_union,shooting,skateboard,skating,skiing,soccer,swimming,table_tennis,tennis" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Sports Centre" icon="presets/sports_centre.png" type="node">
-					<label text="Edit Sports Centre"/>
-					<key key="leisure" value="sports_centre"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="select sport:"/>
-					<space/>
-					<combo key="sport" text="sport" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,boules,bowls,canadian_football,canoe,climbing,cricket,cricket_nets,croquet,cycling,dog_racing,equestrian,gaelic_football,golf,gymnastics,hockey,horse_racing,motor,pelota,racquet,rugby_league,rugby_union,shooting,skateboard,skating,skiing,soccer,swimming,table_tennis,tennis" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Racetrack" icon="presets/stadium.png" type="way,closedway,relation">
-					<label text="Edit Racetrack"/>
-					<key key="leisure" value="track"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Golf Course" icon="presets/golf.png" type="node,closedway">
-					<label text="Edit Golf Course"/>
-					<key key="leisure" value="golf_course"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Miniature Golf" icon="presets/golf.png" type="node,closedway">
-					<label text="Edit Miniature Golf"/>
-					<key key="leisure" value="miniature_golf"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-			</group>
-			<!-- Sport facilities -->
-			<item name="Bench" icon="presets/bench.png" type="node">
-				<label text="Edit Bench"/>
-				<key key="amenity" value="bench"/>
-				<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-				<space/>
-				<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-				<space/>
-				<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-				<space/>
-				<label text="________________________________________"/>
-				<space/>
-				<text key="note" text="Note" fr.text="Notes"/>
-				<space/>
-			</item>
-		</group>
-		<!-- Cultural and social -->
 		<group name="Public services" fr.name="Services d'interet public" icon="presets/townhall.png">
 			<group name="Educational facilities" fr.name="Structures d'education" en.name="Educational facilities" icon="presets/school.png">
 				<item name="Kindergarten" fr.name="Kindergarten" en.name="Kindergarten" type="node,relation" icon="presets/kindergarten.png">
@@ -2428,7 +1995,7 @@
 					<text key="name" text="Name" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<space/>
 					<text key="capacity" text="Capacity (overall)" default="" delete_if_empty="true"/>
 					<space/>
@@ -2456,7 +2023,7 @@
 					<text key="name" text="Name" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<space/>
 					<multiselect key="school:HT" text="Select school levels (hold ctrl for multiple)" fr.text="Sélectionner les niveaux scolaires (appuyer sur Ctrl pour en sélectionner plusieurs)" values="kindergarten;primaire;secondaire" display_values="kindergarten;primaire;secondaire" fr.display_values="kindergarten;primaire;secondaire" delimiter=";"/>
 					<space/>
@@ -2487,7 +2054,7 @@
 					<text key="name" text="Name" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<space/>
 					<text key="capacity" text="Capacity (overall)" default="" delete_if_empty="true"/>
 					<space/>
@@ -2516,7 +2083,7 @@
 					<text key="name" text="Name" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<space/>
 					<text key="capacity" text="Capacity (overall)" default="" delete_if_empty="true"/>
 					<space/>
@@ -2554,7 +2121,7 @@
 					<check key="abandoned" text="Abandoned" fr.text="Abandonné" default="off"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<space/>
 					<text key="capacity:beds" text="Beds capacity max" fr.text="Capacite en nombre maxi de lits" en.text="Beds capacity max"/>
 					<space/>
@@ -2580,7 +2147,7 @@
 					<text key="name" text="Name" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<space/>
 					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
 					<space/>
@@ -3110,7 +2677,7 @@
 					<label text="Edit Post Box"/>
 					<key key="amenity" value="post_box"/>
 					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+					<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 					<space/>
 					<label text="________________________________________"/>
 					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
@@ -3129,205 +2696,6 @@
 		</group>
 		<!-- Public services -->
 		<group name="Commercial and Economic" fr.name="Commerce et Economie" icon="styles/standard/shop/mall.png">
-			<group name="Accommodation" icon="presets/bed.png">
-				<item name="Hotel" icon="presets/bed.png" type="node,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=hotel" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:tourism=hotel" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:tourism=hotel" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:tourism=hotel" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:tourism=hotel"/>
-					<label text="Edit Hotel"/>
-					<key key="tourism" value="hotel"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<combo key="stars" text="Stars" values="1,2,3,4,5,6,7" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="phone" text="Phone Number" default="" delete_if_empty="true"/>
-					<text key="fax" text="Fax Number" default="" delete_if_empty="true"/>
-					<text key="website" text="Website" default="" delete_if_empty="true"/>
-					<text key="email" text="Email Address" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Motel" icon="styles/standard/accommodation/motel.png" type="node,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=motel" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:tourism=motel" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:tourism=motel"/>
-					<label text="Edit Motel"/>
-					<key key="tourism" value="motel"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<combo key="stars" text="Stars" values="1,2,3,4,5,6,7" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="phone" text="Phone Number" default="" delete_if_empty="true"/>
-					<text key="fax" text="Fax Number" default="" delete_if_empty="true"/>
-					<text key="website" text="Website" default="" delete_if_empty="true"/>
-					<text key="email" text="Email Address" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Guest House" icon="styles/standard/accommodation/guest_house.png" type="node,relation">
-					<label text="Edit Guest House"/>
-					<key key="tourism" value="guest_house"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="stars" text="Stars" values="1,2,3,4,5,6,7" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="phone" text="Phone Number" default="" delete_if_empty="true"/>
-					<text key="fax" text="Fax Number" default="" delete_if_empty="true"/>
-					<text key="website" text="Website" default="" delete_if_empty="true"/>
-					<text key="email" text="Email Address" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Hostel" icon="presets/hostel.png" type="node,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=hostel" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:tourism=hostel" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:tourism=hostel"/>
-					<label text="Edit Hostel"/>
-					<key key="tourism" value="hostel"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<combo key="stars" text="Stars" values="1,2,3,4,5,6,7" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="phone" text="Phone Number" default="" delete_if_empty="true"/>
-					<text key="fax" text="Fax Number" default="" delete_if_empty="true"/>
-					<text key="website" text="Website" default="" delete_if_empty="true"/>
-					<text key="email" text="Email Address" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Alpine Hut" icon="styles/standard/accommodation/alpine_hut.png" type="node,relation">
-					<label text="Edit Alpine Hut"/>
-					<key key="tourism" value="alpine_hut"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<text key="ele" text="Elevation" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="phone" text="Phone Number" default="" delete_if_empty="true"/>
-					<text key="fax" text="Fax Number" default="" delete_if_empty="true"/>
-					<text key="website" text="Website" default="" delete_if_empty="true"/>
-					<text key="email" text="Email Address" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<separator/>
-				<item name="Caravan Site" icon="presets/caravan2.png" type="node,relation">
-					<label text="Edit Caravan Site"/>
-					<key key="tourism" value="caravan_site"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="stars" text="Stars" values="1,2,3,4,5,6,7" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="capacity" text="Number of places" default="" delete_if_empty="true"/>
-					<combo key="fee" text="Requires a fee" values="yes,no,interval" delete_if_empty="true"/>
-					<check key="power_supply" text="Power supply" default="off" delete_if_empty="true"/>
-					<check key="tents" text="Tents allowed" default="off" delete_if_empty="true"/>
-					<space/>
-					<text key="phone" text="Phone Number" default="" delete_if_empty="true"/>
-					<text key="fax" text="Fax Number" default="" delete_if_empty="true"/>
-					<text key="website" text="Website" default="" delete_if_empty="true"/>
-					<text key="email" text="Email Address" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Camping Site" icon="presets/tent.png" type="node,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=camp_site" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=camp_site" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:tourism=camp_site" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:tourism=camp_site"/>
-					<label text="Edit Camping Site"/>
-					<key key="tourism" value="camp_site"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="stars" text="Stars" values="1,2,3,4,5,6,7" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="phone" text="Phone Number" default="" delete_if_empty="true"/>
-					<text key="fax" text="Fax Number" default="" delete_if_empty="true"/>
-					<text key="website" text="Website" default="" delete_if_empty="true"/>
-					<text key="email" text="Email Address" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-			</group>
-			<!-- Accomodation -->
 			<group name="Food+Drinks" icon="presets/restaurant.png">
 				<item name="Restaurant" icon="presets/restaurant.png" type="node,relation">
 					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=restaurant" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=restaurant" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=restaurant" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=restaurant" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=restaurant" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=restaurant"/>
@@ -3337,7 +2705,6 @@
 					<space/>
 					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
 					<multiselect key="cuisine" text="Cuisine" values="italian;chinese;pizza;burger;greek;german;indian;regional;kebab;turkish;asian;thai;mexican;japanese;french;sandwich;sushi" default=""/>
-					<check key="microbrewery" text="Microbrewery" default="off" delete_if_empty="true"/>
 					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
 					<combo key="stars" text="Stars" values="1,2,3,4,5,6,7" default="" delete_if_empty="true"/>
 					<space/>
@@ -3389,33 +2756,6 @@
 					<text key="note" text="Note" fr.text="Notes"/>
 					<space/>
 				</item>
-				<item name="Food Court" icon="presets/fastfood.png" type="node,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=food_court" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=food_court" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=food_court"/>
-					<label text="Edit Food Court"/>
-					<key key="amenity" value="food_court"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="phone" text="Phone Number" default="" delete_if_empty="true"/>
-					<text key="fax" text="Fax Number" default="" delete_if_empty="true"/>
-					<text key="website" text="Website" default="" delete_if_empty="true"/>
-					<text key="email" text="Email Address" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
 				<item name="Cafe" icon="presets/cafe.png" type="node,relation">
 					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=cafe" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=cafe" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:amenity=cafe" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=cafe" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=cafe"/>
 					<label text="Edit Cafe"/>
@@ -3445,267 +2785,8 @@
 					<text key="note" text="Note" fr.text="Notes"/>
 					<space/>
 				</item>
-				<item name="Pub" icon="presets/pub.png" type="node,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=pub" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=pub" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=pub" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=pub"/>
-					<label text="Edit Pub"/>
-					<key key="amenity" value="pub"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<check key="microbrewery" text="Microbrewery" default="off" delete_if_empty="true"/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="phone" text="Phone Number" default="" delete_if_empty="true"/>
-					<text key="fax" text="Fax Number" default="" delete_if_empty="true"/>
-					<text key="website" text="Website" default="" delete_if_empty="true"/>
-					<text key="email" text="Email Address" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Biergarten" icon="presets/biergarten.png" type="node,relation">
-					<label text="Edit Biergarten"/>
-					<key key="amenity" value="biergarten"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="phone" text="Phone Number" default="" delete_if_empty="true"/>
-					<text key="fax" text="Fax Number" default="" delete_if_empty="true"/>
-					<text key="website" text="Website" default="" delete_if_empty="true"/>
-					<text key="email" text="Email Address" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Bar" icon="presets/bar.png" type="node,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=bar" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=bar" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=bar" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=bar" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=bar" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=bar"/>
-					<label text="Edit Bar"/>
-					<key key="amenity" value="bar"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="phone" text="Phone Number" default="" delete_if_empty="true"/>
-					<text key="fax" text="Fax Number" default="" delete_if_empty="true"/>
-					<text key="website" text="Website" default="" delete_if_empty="true"/>
-					<text key="email" text="Email Address" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Nightclub" icon="presets/bar.png" type="node,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=nightclub" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=nightclub" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=nightclub" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=nightclub" ro.href="http://wiki.openstreetmap.org/wiki/Ro:Tag:amenity=nightclub" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=nightclub"/>
-					<label text="Edit Nightclub"/>
-					<key key="amenity" value="nightclub"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="smoking" text="Smoking" values="yes,dedicated,separated,isolated,no" default="" delete_if_empty="true"/>
-					<combo key="wheelchair" text="Wheelchairs" values="yes,no" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="phone" text="Phone Number" default="" delete_if_empty="true"/>
-					<text key="fax" text="Fax Number" default="" delete_if_empty="true"/>
-					<text key="website" text="Website" default="" delete_if_empty="true"/>
-					<text key="email" text="Email Address" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Brothel" fr.name="Bordel" type="node,relation">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=brothel"/>
-					<label text="Edit Brothel"/>
-					<key key="amenity" value="brothel"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
 			</group>
 			<!-- Food+Drinks -->
-			<group name="Tourism" icon="presets/sightseeing.png">
-				<item name="Beach resort" fr.name="Plage amenagee" type="node,closedway">
-					<label text="Edit beach resort" fr.text="Editer/mettre a jour une plage amenagee"/>
-					<space/>
-					<key key="leisure" value="beach_resort"/>
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dbeach_resort"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="surface" text="Surface" fr.text="Surface" values="sand,gravel,cement,other,undefined" display_values="sand,gravel,cement,other,undefined" fr.display_values="sable,gravier,ciment,autre,non defini" delete_if_empty="true"/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<check key="supervised" text="Supervised" fr.text="Surveillance" default="off"/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Attraction" icon="presets/sightseeing.png" type="node,closedway">
-					<label text="Edit Attraction"/>
-					<key key="tourism" value="attraction"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Viewpoint" icon="presets/viewpoint.png" type="node,closedway">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=viewpoint" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=viewpoint" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:tourism=viewpoint" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:tourism=viewpoint"/>
-					<label text="Edit Viewpoint"/>
-					<key key="tourism" value="viewpoint"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<separator/>
-				<item name="Information Office" icon="presets/informationoffice.png" type="node,closedway">
-					<link href="http://wiki.openstreetmap.org/wiki/Key:information" de.href="http://wiki.openstreetmap.org/wiki/DE:Key:information" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:information" ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:information" ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:information"/>
-					<key key="tourism" value="information"/>
-					<key key="information" value="office"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Fr 08:30-20:00,Tu-Su 08:00-15:00;Sa 08:00-12:00" default="" delete_if_empty="true"/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Map" icon="presets/map.png" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Key:information"/>
-					<key key="tourism" value="information"/>
-					<key key="information" value="map"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="map_type" text="Detail Grade" values="topo,street,scheme" default="" delete_if_empty="true"/>
-					<combo key="map_size" text="Shown Area" values="site,city,region" default="" delete_if_empty="true"/>
-					<text key="description" text="Closer Description" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="Routes shown for:"/>
-					<check key="hiking" text="Hiking" default="off" delete_if_empty="true"/>
-					<check key="bicycle" text="Cycling" default="off" delete_if_empty="true"/>
-					<check key="mtb" text="Mountainbiking" default="off" delete_if_empty="true"/>
-					<check key="ski" text="Skiing" default="off" delete_if_empty="true"/>
-					<check key="horse" text="Riding" default="off" delete_if_empty="true"/>
-					<label text="... other transportation modes possible"/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Information Board" icon="presets/board.png" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:information=board" de.href="http://wiki.openstreetmap.org/wiki/DE:Proposed_features/information" it.href="http://wiki.openstreetmap.org/wiki/IT:Proposed_features/information"/>
-					<key key="tourism" value="information"/>
-					<key key="information" value="board"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<combo key="board_type" text="Board Content" values="notice,history,nature,wildlife,plants" default="board" delete_if_empty="true"/>
-					<text key="description" text="Closer Description" default="" delete_if_empty="true"/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-			</group>
-			<!-- Tourism -->
 			<group name="Food" icon="styles/standard/shop/supermarket.png">
 				<item name="Supermarket" icon="styles/standard/shop/supermarket.png" type="node">
 					<label text="Edit Supermarket"/>
@@ -3838,29 +2919,6 @@
 					<text key="note" text="Note" fr.text="Notes"/>
 					<space/>
 				</item>
-				<item name="Deli (Fine Food)" icon="presets/deli.png" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:shop=deli" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=deli"/>
-					<label text="Edit Deli (Fine Food)"/>
-					<label text="________________________________________"/>
-					<label text="SHOP" fr.text="COMMERCE" en.text="SHOP"/>
-					<key key="shop" value="deli"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
 				<item name="Confectionery" icon="presets/confectionery.png" type="node">
 					<link href="http://wiki.openstreetmap.org/wiki/Tag:shop=confectionery" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=confectionery" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=confectionery" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=confectionery"/>
 					<label text="Edit Confectionery"/>
@@ -3954,28 +3012,6 @@
 					<space/>
 				</item>
 				<separator/>
-				<item name="Alcohol" icon="styles/standard/shop/beverages.png" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:shop=alcohol" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=alcohol"/>
-					<label text="Edit Alcohol Shop"/>
-					<label text="________________________________________"/>
-					<label text="SHOP" fr.text="COMMERCE" en.text="SHOP"/>
-					<key key="shop" value="alcohol"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
 				<item name="Beverages" icon="styles/standard/shop/beverages.png" type="node">
 					<label text="Edit Beverages Shop"/>
 					<label text="________________________________________"/>
@@ -4293,29 +3329,6 @@
 					<label text="________________________________________"/>
 					<label text="SHOP" fr.text="COMMERCE" en.text="SHOP"/>
 					<key key="shop" value="mobile_phone"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Vacuum Cleaner" icon="presets/vacuum_cleaner.png" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:shop=vacuum_cleaner" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=vacuum_cleaner"/>
-					<label text="Edit Vacuum Cleaner"/>
-					<label text="________________________________________"/>
-					<label text="SHOP" fr.text="COMMERCE" en.text="SHOP"/>
-					<key key="shop" value="vacuum_cleaner"/>
 					<text key="name" text="Name" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
@@ -4677,30 +3690,6 @@
 			</group>
 			<!--Vehicles -->
 			<group name="Cash" icon="presets/dollar.png">
-				<item name="Bank" icon="styles/standard/money/bank.png" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=bank" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=bank" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=bank" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=bank" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:amenity=bank" no.href="http://wiki.openstreetmap.org/wiki/No:Tag:amenity=bank" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=bank" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=bank"/>
-					<label text="Edit Bank"/>
-					<label text="________________________________________"/>
-					<label text="ATTRIBUTES" fr.text="ATTRIBUTS" en.text="ATTRIBUTES"/>
-					<key key="amenity" value="bank"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<check key="atm" text="Automated Teller Machine" default="on" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
 				<item name="Money Transfer" icon="styles/standard/money/exchange.png" type="node">
 					<link href="http://wiki.openstreetmap.org/wiki/Proposed_features/Money_transfer"/>
 					<label text="Edit Money Transfer"/>
@@ -4745,119 +3734,10 @@
 					<text key="note" text="Note" fr.text="Notes"/>
 					<space/>
 				</item>
-				<item name="Automated Teller Machine" icon="styles/standard/money/atm.png" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=atm" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=atm" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=atm" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=atm" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=atm" hr.href="http://wiki.openstreetmap.org/wiki/Hr:Tag:amenity=atm" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=atm" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=atm" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=atm" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:amenity=atm"/>
-					<label text="Edit Automated Teller Machine"/>
-					<label text="________________________________________"/>
-					<label text="ATTRIBUTES" fr.text="ATTRIBUTS" en.text="ATTRIBUTES"/>
-					<key key="amenity" value="atm"/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
 				<separator/>
-				<item name="Lottery kiosk" fr.name="Kiosque de loterie" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Key:gambling"/>
-					<label text="Edit Lottery kiosk" fr.text="Creer ou mettre a jour un kiosque de loterie"/>
-					<key key="amenity" value="gambling"/>
-					<key key="gambling" value="lottery"/>
-					<space/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Pawnbroker" de.name="Pfandhaus" fr.name="Prêteur sur gage" ru.name="Ломбард" icon="icons/pawnbroker.png" type="node,closedway">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:shop%3Dpawnbroker"/>
-					<label text="Edit Pawnbroker" de.text="bearbeite Pfandhaus" fr.text="Modifier un prêteur sur gage"/>
-					<space/>
-					<key key="shop" value="pawnbroker"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<text key="operator" text="Operator" de.text="Betreiber" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
 			</group>
 			<!-- Cash -->
 			<group name="Other" icon="styles/standard/shop/mall.png">
-				<item name="Department Store" icon="styles/standard/shop/mall.png" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:shop=department_store" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:shop=department_store" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=department_store" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=department_store"/>
-					<label text="Edit Department Store"/>
-					<label text="________________________________________"/>
-					<label text="ATTRIBUTES" fr.text="ATTRIBUTS" en.text="ATTRIBUTES"/>
-					<key key="shop" value="department_store"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Mall" icon="styles/standard/shop/mall.png" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:shop=mall" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=mall" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=mall"/>
-					<label text="Edit Mall"/>
-					<label text="________________________________________"/>
-					<label text="ATTRIBUTES" fr.text="ATTRIBUTS" en.text="ATTRIBUTES"/>
-					<key key="shop" value="mall"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<separator/>
 				<item name="Chemist" icon="styles/standard/shop/chemist.png" type="node">
 					<label text="Edit Chemist"/>
 					<label text="________________________________________"/>
@@ -4924,96 +3804,6 @@
 					<label text="________________________________________"/>
 					<label text="ATTRIBUTES" fr.text="ATTRIBUTS" en.text="ATTRIBUTES"/>
 					<key key="shop" value="optician"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Jewelry" icon="styles/standard/shop/jewelry.png" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:shop=jewelry" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=jewelry"/>
-					<label text="Edit Jewelry"/>
-					<label text="________________________________________"/>
-					<label text="ATTRIBUTES" fr.text="ATTRIBUTS" en.text="ATTRIBUTES"/>
-					<key key="shop" value="jewelry"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Erotic" icon="presets/erotic.png" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:shop=erotic" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=erotic"/>
-					<label text="Edit Erotic"/>
-					<space/>
-					<key key="shop" value="erotic"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<separator/>
-				<item name="Florist" icon="styles/standard/shop/florist.png" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:shop=florist" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=florist" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:shop=florist" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=florist" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=florist" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=florist"/>
-					<label text="Edit Florist"/>
-					<label text="________________________________________"/>
-					<label text="ATTRIBUTES" fr.text="ATTRIBUTS" en.text="ATTRIBUTES"/>
-					<key key="shop" value="florist"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
-				<item name="Garden Centre" icon="styles/standard/shop/garden_centre.png" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:shop=garden_centre" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=garden_centre" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=garden_centre"/>
-					<label text="Edit Garden Centre"/>
-					<label text="________________________________________"/>
-					<label text="ATTRIBUTES" fr.text="ATTRIBUTS" en.text="ATTRIBUTES"/>
-					<key key="shop" value="garden_centre"/>
 					<text key="name" text="Name" default="" delete_if_empty="true"/>
 					<space/>
 					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
@@ -5550,25 +4340,6 @@
 					<text key="note" text="Note" fr.text="Notes"/>
 					<space/>
 				</item>
-				<item name="Distillery" fr.name="Distillerie" type="node">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:craft%3Ddistillery"/>
-					<label text="Edit Distillery" fr.text="Modifier un distillerie"/>
-					<space/>
-					<key key="craft" value="distillery"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<text key="operator" text="Operator" de.text="Betreiber" default="" delete_if_empty="true"/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
 				<item name="Key cutter" de.name="Schlüsselmacher" fr.name="Clef minute" type="node,closedway">
 					<link href="http://wiki.openstreetmap.org/wiki/Tag:craft%3Dkey_cutter"/>
 					<label text="Edit Key cutter" de.text="bearbeite Schlüsselmacher" fr.text="Modifier une Clef minute"/>
@@ -5705,25 +4476,6 @@
 					<text key="note" text="note" fr.text="notes" en.text="note"/>
 					<space/>
 				</item>
-				<item name="Architect" de.name="Architekturbüro" fr.name="Cabinet d'architecte" ru.name="Архитектор" icon="icons/architect.png" type="node,closedway">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Darchitect"/>
-					<label text="Edit Architect" de.text="bearbeite Architekturbüro" fr.text="Modifier un Cabinet d'architecte"/>
-					<space/>
-					<key key="office" value="architect"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<text key="operator" text="Operator" de.text="Betreiber" default="" delete_if_empty="true"/>
-					<label text="________________________________________"/>
-					<label text="source (geometry and/or attributes)" fr.text="source (geometrique et/ou attributaire)" en.text="source (geometry and/or attributes)"/>
-					<space/>
-					<label text="if one is already existing, add new after a comma. ex: bing;survey" fr.text="si une source existe deja, ajouter la nouvelle apres une virgule. ex: bing;survey" en.text="if one is already existing, add new one after a comma. ex: bing;survey"/>
-					<space/>
-					<text key="source" text="source name" fr.text="nom de la source" en.text="source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="note" fr.text="notes" en.text="note"/>
-					<space/>
-				</item>
 				<item name="Government" de.name="Behörde / Regierung" fr.name="Bureau gouvernemental" ru.name="Госучреждение" icon="icons/government.png" type="node,closedway">
 					<link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Dgovernment"/>
 					<label text="Edit Government" de.text="bearbeite Behörde / Regierung"/>
@@ -5800,25 +4552,6 @@
 					<text key="note" text="note" fr.text="notes" en.text="note"/>
 					<space/>
 				</item>
-				<item name="Estate Agent" de.name="Immobilienmakler" fr.name="Agence immobilière" ru.name="Риелторское агенство" icon="icons/estate_agent.png" type="node,closedway">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Destate_agent"/>
-					<label text="Edit Estate Agent" de.text="bearbeite Immobilienmakler" fr.text="Modifier une Agence immobilière"/>
-					<space/>
-					<key key="office" value="estate_agent"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<text key="operator" text="Operator" de.text="Betreiber" default="" delete_if_empty="true"/>
-					<label text="________________________________________"/>
-					<label text="source (geometry and/or attributes)" fr.text="source (geometrique et/ou attributaire)" en.text="source (geometry and/or attributes)"/>
-					<space/>
-					<label text="if one is already existing, add new after a comma. ex: bing;survey" fr.text="si une source existe deja, ajouter la nouvelle apres une virgule. ex: bing;survey" en.text="if one is already existing, add new one after a comma. ex: bing;survey"/>
-					<space/>
-					<text key="source" text="source name" fr.text="nom de la source" en.text="source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="note" fr.text="notes" en.text="note"/>
-					<space/>
-				</item>
 				<item name="IT Specialist" de.name="IT-Unternehmen" fr.name="Spécialiste IT" ru.name="IT-специалист" icon="icons/it.png" type="node,closedway">
 					<link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Dit"/>
 					<label text="Edit IT Specialist" de.text="bearbeite IT-Unternehmen"/>
@@ -5838,52 +4571,11 @@
 					<text key="note" text="note" fr.text="notes" en.text="note"/>
 					<space/>
 				</item>
-				<item name="Travel Agenct" icon="presets/travel.png" type="node">
-					<label text="Edit Travel Agency"/>
-					<label text="________________________________________"/>
-					<label text="ATTRIBUTES" fr.text="ATTRIBUTS" en.text="ATTRIBUTES"/>
-					<key key="office" value="travel_agenct"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<text key="operator" text="Operator" de.text="Betreiber" default="" delete_if_empty="true"/>
-					<space/>
-					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
-					<space/>
-					<label text="________________________________________"/>
-					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-					<space/>
-					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-					<space/>
-					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="Note" fr.text="Notes"/>
-					<space/>
-				</item>
 				<item name="Non Government Organisation" de.name="Organisation, nichtstaatlich" fr.name="Organisation non gouvernementale" ru.name="Неправительственное учреждение" icon="icons/ngo.png" type="node,closedway">
 					<link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Dngo"/>
 					<label text="Edit Non Government Organisation" de.text="bearbeite Organisation, nichtstaatlich" fr.text="Modifier une Organisation non gouvernementale"/>
 					<space/>
 					<key key="office" value="ngo"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<text key="operator" text="Operator" de.text="Betreiber" default="" delete_if_empty="true"/>
-					<label text="________________________________________"/>
-					<label text="source (geometry and/or attributes)" fr.text="source (geometrique et/ou attributaire)" en.text="source (geometry and/or attributes)"/>
-					<space/>
-					<label text="if one is already existing, add new after a comma. ex: bing;survey" fr.text="si une source existe deja, ajouter la nouvelle apres une virgule. ex: bing;survey" en.text="if one is already existing, add new one after a comma. ex: bing;survey"/>
-					<space/>
-					<text key="source" text="source name" fr.text="nom de la source" en.text="source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="note" fr.text="notes" en.text="note"/>
-					<space/>
-				</item>
-				<item name="Quango" de.name="Organisation, halbstaatlich" fr.name="Autorité administrative indépendante" icon="icons/quango.png" type="node,closedway">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Dquango"/>
-					<label text="Edit Quango" de.text="bearbeite Organisation, halbstaatlich" fr.text="Modifier une autorité administrative indépendante"/>
-					<space/>
-					<key key="office" value="quango"/>
 					<text key="name" text="Name" default="" delete_if_empty="true"/>
 					<text key="operator" text="Operator" de.text="Betreiber" default="" delete_if_empty="true"/>
 					<label text="________________________________________"/>
@@ -5937,25 +4629,6 @@
 					<text key="note" text="note" fr.text="notes" en.text="note"/>
 					<space/>
 				</item>
-				<item name="Travel Agent" de.name="Reiseunternehmen" fr.name="Agence de voyage" ru.name="Туристическое агенство" icon="icons/travel_agent.png" type="node,closedway">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Dtravel_agent"/>
-					<label text="Edit Travel Agent" de.text="bearbeite Reiseunternehmen" fr.text="Modifier une Agence de voyage"/>
-					<space/>
-					<key key="office" value="travel_agent"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<text key="operator" text="Operator" de.text="Betreiber" default="" delete_if_empty="true"/>
-					<label text="________________________________________"/>
-					<label text="source (geometry and/or attributes)" fr.text="source (geometrique et/ou attributaire)" en.text="source (geometry and/or attributes)"/>
-					<space/>
-					<label text="if one is already existing, add new after a comma. ex: bing;survey" fr.text="si une source existe deja, ajouter la nouvelle apres une virgule. ex: bing;survey" en.text="if one is already existing, add new one after a comma. ex: bing;survey"/>
-					<space/>
-					<text key="source" text="source name" fr.text="nom de la source" en.text="source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="note" fr.text="notes" en.text="note"/>
-					<space/>
-				</item>
 				<item name="Accountant" de.name="Steuerberater" fr.name="Cabinet comptable" ru.name="Бухгалтер" icon="icons/accountant.png" type="node,closedway">
 					<link href="http://wiki.openstreetmap.org/wiki/DE:Tag:office%3Daccountant"/>
 					<label text="Edit Accountant" de.text="bearbeite Steuerberater" fr.text="Modifier un Cabinet comptable"/>
@@ -5996,25 +4669,6 @@
 					<text key="note" text="note" fr.text="notes" en.text="note"/>
 					<space/>
 				</item>
-				<item name="Insurance" de.name="Versicherung" fr.name="Cabinet d'assurance" ru.name="Страховая компания" icon="icons/insurance.png" type="node,closedway">
-					<link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Dinsurance"/>
-					<label text="Edit Insurance" de.text="bearbeite Versicherung" fr.text="Modifier un Cabinet d'assurance"/>
-					<space/>
-					<key key="office" value="insurance"/>
-					<text key="name" text="Name" default="" delete_if_empty="true"/>
-					<text key="operator" text="Operator" de.text="Betreiber" default="" delete_if_empty="true"/>
-					<label text="________________________________________"/>
-					<label text="source (geometry and/or attributes)" fr.text="source (geometrique et/ou attributaire)" en.text="source (geometry and/or attributes)"/>
-					<space/>
-					<label text="if one is already existing, add new after a comma. ex: bing;survey" fr.text="si une source existe deja, ajouter la nouvelle apres une virgule. ex: bing;survey" en.text="if one is already existing, add new one after a comma. ex: bing;survey"/>
-					<space/>
-					<text key="source" text="source name" fr.text="nom de la source" en.text="source name"/>
-					<space/>
-					<label text="________________________________________"/>
-					<space/>
-					<text key="note" text="note" fr.text="notes" en.text="note"/>
-					<space/>
-				</item>
 				<item name="Newspaper" de.name="Zeitungsredaktion" fr.name="Rédaction de magazines" ru.name="Редакция газеты" icon="icons/newspaper.png" type="node,closedway">
 					<link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Dnewspaper"/>
 					<label text="Edit Newspaper" de.text="bearbeite Zeitungsredaktion"/>
@@ -6043,7 +4697,7 @@
 				<text key="name" text="Name" default="" delete_if_empty="true"/>
 				<space/>
 				<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-				<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+				<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 				<space/>
 				<check key="disused" text="Disused" fr.text="Désaffecté" default="off"/>
 				<check key="abandoned" text="Abandoned" fr.text="Abandonné" default="off"/>
@@ -6073,7 +4727,7 @@
 				<text key="name" text="Name" default="" delete_if_empty="true"/>
 				<space/>
 				<text key="operator" text="Operator name" fr.text="Nom de l'operateur" en.text="Operator name"/>
-				<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="public,private,government,ngo,community" display_values="public,private,government,NGO,community" fr.display_values="publique,prive,gouvernement,ONG,communaute" required="true"/>
+				<combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true"/>
 				<space/>
 				<label text="________________________________________"/>
 				<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
@@ -6089,6 +4743,315 @@
 			</item>
 		</group>
 		<!-- Commercial and economical -->
+		<group name="Social and Cultural" fr.name="Culturel et social" icon="presets/theater.png">
+			<group name="Community Center" fr.name="Community Center" icon="presets/community_centre.png">
+				<item name="Community Centre" fr.name="Centre communautaire" icon="presets/community_centre.png" type="node,closedway">
+					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=community_centre" da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:amenity=community_centre" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=community_centre" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=community_centre" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=community_centre" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=community_centre"/>
+					<label text="Community Centre" fr.text="centre communautaire"/>
+					<space/>
+					<key key="amenity" value="community_centre"/>
+					<text key="name" text="Name" default="" delete_if_empty="true"/>
+					<space/>
+					<text key="operator" text="Operator" default="" delete_if_empty="true"/>
+					<combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Fr 08:30-20:00,Tu-Su 08:00-15:00; Sa 08:00-12:00" default="" delete_if_empty="true"/>
+					<label text="________________________________________"/>
+					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+					<space/>
+					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+					<space/>
+					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<space/>
+					<text key="note" text="Note" fr.text="Notes"/>
+					<space/>
+				</item>
+			</group>
+			<!-- Social and communautary facilities" -->
+			<group name="Sport Facilities" icon="presets/soccer.png">
+				<item name="Pitch" icon="presets/pitch.png" type="node,closedway">
+					<label text="Edit Pitch"/>
+					<key key="leisure" value="pitch"/>
+					<text key="name" text="Name" default="" delete_if_empty="true"/>
+					<space/>
+					<label text="select sport:"/>
+					<space/>
+					<combo key="sport" text="sport" values="multi,american_football,baseball,basketball,climbing,cockfighting,golf,gymnastics,hockey,motor,skating,soccer,tennis" default="" delete_if_empty="true"/>
+					<space/>
+					<label text="________________________________________"/>
+					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+					<space/>
+					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+					<space/>
+					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<space/>
+					<text key="note" text="Note" fr.text="Notes"/>
+					<space/>
+				</item>
+				<item name="Stadium" icon="presets/stadium.png" type="closedway">
+					<label text="Edit Stadium"/>
+					<key key="leisure" value="stadium"/>
+					<text key="name" text="Name" default="" delete_if_empty="true"/>
+					<space/>
+					<label text="select sport:"/>
+					<space/>
+					<combo key="sport" text="sport" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,boules,bowls,canadian_football,canoe,climbing,cricket,cricket_nets,croquet,cycling,dog_racing,equestrian,gaelic_football,golf,gymnastics,hockey,horse_racing,motor,pelota,racquet,rugby_league,rugby_union,shooting,skateboard,skating,skiing,soccer,swimming,table_tennis,tennis" default="" delete_if_empty="true"/>
+					<space/>
+					<label text="________________________________________"/>
+					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+					<space/>
+					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+					<space/>
+					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<space/>
+					<text key="note" text="Note" fr.text="Notes"/>
+					<space/>
+				</item>
+				<item name="Sports Centre" icon="presets/sports_centre.png" type="node">
+					<label text="Edit Sports Centre"/>
+					<key key="leisure" value="sports_centre"/>
+					<text key="name" text="Name" default="" delete_if_empty="true"/>
+					<space/>
+					<label text="select sport:"/>
+					<space/>
+					<combo key="sport" text="sport" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,boules,bowls,canadian_football,canoe,climbing,cricket,cricket_nets,croquet,cycling,dog_racing,equestrian,gaelic_football,golf,gymnastics,hockey,horse_racing,motor,pelota,racquet,rugby_league,rugby_union,shooting,skateboard,skating,skiing,soccer,swimming,table_tennis,tennis" default="" delete_if_empty="true"/>
+					<space/>
+					<label text="________________________________________"/>
+					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+					<space/>
+					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+					<space/>
+					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<space/>
+					<text key="note" text="Note" fr.text="Notes"/>
+					<space/>
+				</item>
+				<item name="Racetrack" icon="presets/stadium.png" type="way,closedway,relation">
+					<label text="Edit Racetrack"/>
+					<key key="leisure" value="track"/>
+					<text key="name" text="Name" default="" delete_if_empty="true"/>
+					<space/>
+					<label text="________________________________________"/>
+					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+					<space/>
+					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+					<space/>
+					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<space/>
+					<text key="note" text="Note" fr.text="Notes"/>
+					<space/>
+				</item>
+				<item name="Golf Course" icon="presets/golf.png" type="node,closedway">
+					<label text="Edit Golf Course"/>
+					<key key="leisure" value="golf_course"/>
+					<text key="name" text="Name" default="" delete_if_empty="true"/>
+					<space/>
+					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
+					<space/>
+					<label text="________________________________________"/>
+					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+					<space/>
+					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+					<space/>
+					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<space/>
+					<text key="note" text="Note" fr.text="Notes"/>
+					<space/>
+				</item>
+				<item name="Miniature Golf" icon="presets/golf.png" type="node,closedway">
+					<label text="Edit Miniature Golf"/>
+					<key key="leisure" value="miniature_golf"/>
+					<text key="name" text="Name" default="" delete_if_empty="true"/>
+					<space/>
+					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
+					<space/>
+					<label text="________________________________________"/>
+					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+					<space/>
+					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+					<space/>
+					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<space/>
+					<text key="note" text="Note" fr.text="Notes"/>
+					<space/>
+				</item>
+			</group>
+			<!-- Sport facilities -->
+			<group name="Place of worship" fr.name="Lieu de culte" en.name="Place of worship" icon="presets/church.png">
+				<item name="Place of worship" fr.name="Lieu de culte" en.name="Place of worship" type="node,relation" icon="presets/church.png">
+					<key key="amenity" value="place_of_worship"/>
+					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=place_of_worship" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=place_of_worship" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=place_of_worship" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=place_of_worship" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=place_of_worship" no.href="http://wiki.openstreetmap.org/wiki/No:Tag:amenity=place_of_worship" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=place_of_worship" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=place_of_worship" sv.href="http://wiki.openstreetmap.org/wiki/Sv:Tag:amenity=place_of_worship"/>
+					<label text="** Edit/modify a place of worship **" fr.text="** Creer/mettre a jour un lieu de culte **" en.text="** Edit/modify a place of worship **"/>
+					<space/>
+					<label text="________________________________________"/>
+					<label text="PLACE OF WORSHIP" fr.text="LIEU DE CULTE" en.text="PLACE OF WORSHIP"/>
+					<text key="name" text="Name" default="" delete_if_empty="true"/>
+					<space/>
+					<combo key="religion" text="Religion" fr.text="Religion" en.text="Religion" values="christian,voodoo,muslim,buddhist,jewish,hindu,other" display_values="christian,voodoo,muslim,buddhist,jewish,hindu,other" fr.display_values="christianisme,vaudou,islam,bouddhisme,judaisme,hindouisme,autre" en.display_values="christian,voodoo,muslim,buddhist,jewish,hindu,other"/>
+					<combo key="denomination" text="Religion denomination" fr.text="Denomination du culte" en.text="Religion denomination" values="pentecostal,baptist,jehovahs_witnesses,adventist,catholic,protestant,methodist,others" display_values="pentecostal,baptist,jehovah's witnesses,adventist,catholic,protestant,methodist,others" fr.display_values="pencotiste,baptiste,temoins de jehovah,adventiste du 7eme jour,catholique,protestant,methodiste,autres" en.display_values="pentecostal,baptist,jehovah's witnesses,adventist,catholic,protestant,methodist,others"/>
+					<space/>
+					<check key="disused" text="Disused" fr.text="Désaffecté" default="off"/>
+					<check key="abandoned" text="Abandoned" fr.text="Abandonné" default="off"/>
+					<label text="________________________________________"/>
+					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+					<space/>
+					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+					<space/>
+					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<space/>
+					<text key="note" text="Note" fr.text="Notes"/>
+					<space/>
+				</item>
+				<item name="Graveyard" fr.name="Cimetiere appartenant a un lieu de culte" en.name="Graveyard" icon="presets/graveyard.png" type="node,closedway,relation">
+					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=grave_yard" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:amenity=grave_yard" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=grave_yard" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=grave_yard"/>
+					<label text="** Edit/modify a graveyard **" fr.text="** Creer/mettre a jour un cimetiere appartenant a un lieu de culte **" en.text="** Edit/modify a graveyard **"/>
+					<space/>
+					<label text="________________________________________"/>
+					<label text="GRAVEYARD" fr.text="CIMETIERE APPARTENANT A UN LIEU DE CULTE" en.text="GRAVEYARD"/>
+					<key key="amenity" value="grave_yard"/>
+					<text key="name" text="Name" default="" delete_if_empty="true"/>
+					<label text="________________________________________"/>
+					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+					<space/>
+					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+					<space/>
+					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<space/>
+					<text key="note" text="Note" fr.text="Notes"/>
+					<space/>
+				</item>
+			</group>
+			<!-- Place of worship -->
+			<group name="Culture" icon="presets/theater.png">
+				<item name="Cinema" icon="presets/cinema.png" type="node,closedway,relation">
+					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=cinema" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=cinema" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=cinema" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=cinema" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=cinema"/>
+					<label text="Edit Cinema"/>
+					<key key="amenity" value="cinema"/>
+					<text key="name" text="Name" default="" delete_if_empty="true"/>
+					<space/>
+					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
+					<label text="________________________________________"/>
+					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+					<space/>
+					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+					<space/>
+					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<space/>
+					<text key="note" text="Note" fr.text="Notes"/>
+					<space/>
+				</item>
+				<item name="Theatre" icon="presets/theater.png" type="node,relation">
+					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=theatre" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=theatre" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=theatre" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=theatre"/>
+					<label text="Edit Theatre"/>
+					<key key="amenity" value="theatre"/>
+					<text key="name" text="Name" default="" delete_if_empty="true"/>
+					<space/>
+					<label text="________________________________________"/>
+					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+					<space/>
+					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+					<space/>
+					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<space/>
+					<text key="note" text="Note" fr.text="Notes"/>
+					<space/>
+				</item>
+				<item name="Library" icon="styles/standard/shop/rental/library.png" type="node,relation">
+					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=library" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=library" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=library" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=library" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=library" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=library"/>
+					<label text="Edit Library"/>
+					<key key="amenity" value="library"/>
+					<text key="name" text="Name" default="" delete_if_empty="true"/>
+					<space/>
+					<text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true"/>
+					<space/>
+					<label text="________________________________________"/>
+					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+					<space/>
+					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+					<space/>
+					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<space/>
+					<text key="note" text="Note" fr.text="Notes"/>
+					<space/>
+				</item>
+				<item name="Arts Centre" icon="presets/arts_centre.png" type="node,closedway,relation">
+					<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=arts_centre" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=arts_centre" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=arts_centre" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=arts_centre"/>
+					<label text="Edit Arts Centre"/>
+					<key key="amenity" value="arts_centre"/>
+					<text key="name" text="Name" default="" delete_if_empty="true"/>
+					<space/>
+					<text key="operator" text="Operator name" fr.text="Operateur" en.text="Operator name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+					<space/>
+					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+					<space/>
+					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<space/>
+					<text key="note" text="Note" fr.text="Notes"/>
+					<space/>
+				</item>
+				<item name="Artwork" icon="presets/arts_centre.png" type="node,way,closedway">
+					<link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=artwork" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=artwork" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:tourism=artwork" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:tourism=artwork" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:tourism=artwork"/>
+					<label text="Edit Artwork"/>
+					<key key="tourism" value="artwork"/>
+					<text key="name" text="Name" default="" delete_if_empty="true"/>
+					<space/>
+					<label text="________________________________________"/>
+					<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+					<space/>
+					<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+					<space/>
+					<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+					<space/>
+					<label text="________________________________________"/>
+					<space/>
+					<text key="note" text="Note" fr.text="Notes"/>
+					<space/>
+				</item>
+			</group>
+			<!-- Culture -->
+			<item name="Bench" icon="presets/bench.png" type="node">
+				<label text="Edit Bench"/>
+				<key key="amenity" value="bench"/>
+				<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+				<space/>
+				<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+				<space/>
+				<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name"/>
+				<space/>
+				<label text="________________________________________"/>
+				<space/>
+				<text key="note" text="Note" fr.text="Notes"/>
+				<space/>
+			</item>
+		</group>
+		<!-- Social and Cultural -->
 		<group name="Landuse" fr.name="Occupation du sol" icon="presets/landuse.png">
 			<item name="Built urban landuses" fr.name="Zones baties urbaines" en.name="Built urban landuses" type="closedway,relation">
 				<link href="http://wiki.openstreetmap.org/wiki/Landuse"/>
@@ -6686,7 +5649,7 @@
 			<!-- Water -->
 		</group>
 		<!-- Physical environment -->
-		<group name="Hazards" fr.name="Menaces" icon="icons/ambulance_station.png">
+		<group name="Hazards" fr.name="Menaces" icon="presets/locality.png">
 			<item name="Flood prone" fr.name="Menace d'inondation" en.name="Flood prone">
 				<key key="hazard_prone" value="yes"/>
 				<key key="hazard_type" value="flood"/>
@@ -6740,26 +5703,6 @@
 			</item>
 		</group>
 		<!-- Hazards -->
-		<item name="Add an address and contact" fr.name="+ Adresse et contact">
-			<space/>
-			<text key="addr:housenumber" text="building number" fR.text="numero du batiment " eN.text="building number"/>
-			<text key="addr:street" text="street name" use_last_as_default="force" delete_if_empty="true"/>
-			<label text="________________________________________"/>
-			<label text="Contact:"/>
-			<text key="phone" text="Phone Number" default="" delete_if_empty="true"/>
-			<text key="fax" text="Fax Number" default="" delete_if_empty="true"/>
-			<text key="website" text="Website" default="" delete_if_empty="true"/>
-			<text key="email" text="Email Address" default="" delete_if_empty="true"/>
-			<space/>
-		</item>
-		<item name="Add more Names" fr.name="+ Nom">
-			<text key="name" text="Name" default="" delete_if_empty="true"/>
-			<text key="loc_name" text="Name in local language" fr.text="Nom en langue locale" en.text="Name in local language"/>
-			<space/>
-			<text key="alt_name" text="Alternative name" fr.text="Nom populaire alternatif" en.text="Alternative name"/>
-			<text key="short_name" text="Abbreviation name" fr.text="Abreviation du nom" en.text="Abbreviation name"/>
-			<text key="old_name" text="Old name" fr.text="Ancien nom" en.text="Old name"/>
-		</item>
 	</group>
 	<!-- General group -->
 </presets>
