@@ -147,8 +147,13 @@ To create a line: draw the line, creating intermediary points (nodes); double cl
 To create a polygon (area): draw the line, creating intermediary points (nodes); double click at the end of the polygone to be created to complete the process. 
 Add attributes to the created geometries repeating the steps of the adding new attributes section.
 
+## 5. Create a large ready-to-print city map
 
-## 5: OSM support resources 
+MapOSMatic is a web application to generate maps of cities or towns, including index of streets, from OpenStreetMap data.
+Such map can be used for notice board within the camp
+Access the servcie here: http://www.maposmatic.org/
+
+## 6: OSM support resources 
 
 Generic OSM support resources.
 * OSM Beginner's Guide
