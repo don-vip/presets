@@ -119,6 +119,18 @@ JOSM -> WMS -> newly added WMS resources to have it as a background support imag
 Optional: Custom Tile urls can also be added using the SlippyMap plugin, see:
     * http://wiki.openstreetmap.org/wiki/JOSM/Plugins/SlippyMap#Custom_tile_URLS
 
+Issue with automatic proxy configuration may hapen. The way we fixed this can be:
+1. Go to http://wpad/wpad.dat on the computer
+2. Open the resulting wpad.dat file in a text editor
+3. Read the proxy setting out of the file
+4. Open JOSM
+5. Go to Preferences
+6. Go to Connection settings
+7. Go to Proxy settings Tab
+8. Change to "manually configure a HTTP proxy
+9. Enter proxy settings from wpad.dat file
+   
+
 ### 4-3: Focused editing of OSM data
 
 Modifying existing attributes of features:  
