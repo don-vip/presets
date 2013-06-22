@@ -2,7 +2,7 @@
 
 This preset can be used to map a camp in Open Street Map.
 
-Note that "addr:postcode" is used to register the Addressing systems as used in UNHCR registration database. This will facilitate export and join with aggregated refugee profile information.
+Note that ``` addr:postcode ``` is used to register the Addressing systems as used in UNHCR registration database. This will facilitate export and join with aggregated refugee profile information.
 
 Administrative levels within the camp are recorded at 2 levels:
 
@@ -24,12 +24,13 @@ For level 2 (Camp blocks or communities)
 ![ScreenShot](https://github.com/unhcr/presets/blob/master/screenshot.png)
 
 
-# JOSM (Java-based OSM editor) basic editing guide
+# JOSM (OSM editor) basic editing guide
 
 
 ## 1: Create an account
 OpenStreetMap.org: https://www.openstreetmap.org/user/new
-Note: you will need to provide an working email address to activate your account
+Note: you will need to provide a working email address to activate your account. 
+Identify the organisation you are working with in your user name this will facilitate further audit trail.
 
 
 ## 2: Download and run JOSM windows installer
@@ -127,9 +128,9 @@ Loading field papers
 
 Loading imagery for tracing or quality control of GPX based edits
 Open Edit -> preferences and select WMS Plugin Preferences
-* Upper windows lists the WMS resources activated in JOSM
-* Lower window lists easy activable WMS resources for JOSM
-* Check details of the best available imagery for tracing in Haiti on the Imagery section of the WikiProject Haiti:
+*  Upper windows lists the WMS resources activated in JOSM
+*  Lower window lists easy activable WMS resources for JOSM
+*  Check details of the best available imagery for tracing in Haiti on the Imagery section of the WikiProject Haiti:
     * http://wiki.openstreetmap.org/wiki/WikiProject_Haiti/Imagery_and_data_sources
 * Hit the ADD button and copy/ paste the Name and URL of a WMS resource to your AOI 
 The WMS resources is now active in your editing session 
@@ -140,15 +141,15 @@ Optional: Custom Tile urls can also be added using the SlippyMap plugin, see:
     * http://wiki.openstreetmap.org/wiki/JOSM/Plugins/SlippyMap#Custom_tile_URLS
 
 Issue with automatic proxy configuration may hapen. The way we fixed this can be:
-1. Go to http://wpad/wpad.dat on the computer
-2. Open the resulting wpad.dat file in a text editor
-3. Read the proxy setting out of the file
-4. Open JOSM
-5. Go to Preferences
-6. Go to Connection settings
-7. Go to Proxy settings Tab
-8. Change to "manually configure a HTTP proxy
-9. Enter proxy settings from wpad.dat file
+1.  Go to http://wpad/wpad.dat on the computer
+2.  Open the resulting wpad.dat file in a text editor
+3.  Read the proxy setting out of the file
+4.  Open JOSM
+5.  Go to Preferences
+6.  Go to Connection settings
+7.  Go to Proxy settings Tab
+8.  Change to "manually configure a HTTP proxy
+9.  Enter proxy settings from wpad.dat file
    
 
 ### 4-3: Focused editing of OSM data
@@ -156,40 +157,34 @@ Issue with automatic proxy configuration may hapen. The way we fixed this can be
 Modifying existing attributes of features:  
 Attribution of features in OSM is based on a tag structure composed of a key (Highway) and its associated values (primary, secondary, tertiary).
 To modify an attribute of an OSM feature:
-	* select the line feature, see on the right panel the key and value of the tag you want to edit
-    * double-click the row or hit the edit button and change to an appropriate value 
+*  select the line feature, see on the right panel the key and value of the tag you want to edit
+*  double-click the row or hit the edit button and change to an appropriate value 
 
 Adding attributes to existing features 
 Click the “Add” button to enter the key and its associated value of the tag to be created
-	* In the pop-up type the key of your tag which should appear in the pick list (note, all keys should be lowercase)
-	* Then press tab to move to the value field and type the actual name of the feature
+*  In the pop-up type the key of your tag which should appear in the pick list (note, all keys should be lowercase)
+*  Then press tab to move to the value field and type the actual name of the feature
 
 Adding attributes to existing features using the Presets  
 From the Preset menu, navigate to the relevant preset and in the associated pop up key in values or select values from drop down menus and apply.  
 
 Modifying the geometry of existing feature 
 Changing Position:
-    * You may want to adjust the position of point (a water point), area (a camp) or line
-    * To do this simply select & drag the feature.
+*  You may want to adjust the position of point (a water point), area (a camp) or line
+*  To do this simply select & drag the feature.
 Splitting a linear feature:
-    * Suppose you have a road selected and it extends for a long distance over which the name changes.
-    * If you want to add two names this may require “splitting the way”.
-    * To do this select one of the nodes in the way, then choose Tools > Split Way 
+*  Suppose you have a road selected and it extends for a long distance over which the name changes.
+*  If you want to add two names this may require “splitting the way”.
+*  To do this select one of the nodes in the way, then choose Tools > Split Way 
 
 Creating new point/ line/ area features 
 Hit the Draw Node tool from the tool box (2nd tool from the top)  
-To create a point: double click a point at the relevant location. 
-To create a line: draw the line, creating intermediary points (nodes); double click at the end of the segment to be created to complete the process. 
-To create a polygon (area): draw the line, creating intermediary points (nodes); double click at the end of the polygone to be created to complete the process. 
+* To create a point: double click a point at the relevant location. 
+* To create a line: draw the line, creating intermediary points (nodes); double click at the end of the segment to be created to complete the process. 
+* To create a polygon (area): draw the line, creating intermediary points (nodes); double click at the end of the polygone to be created to complete the process. 
 Add attributes to the created geometries repeating the steps of the adding new attributes section.
 
-## 5. Create a large ready-to-print city map
-
-MapOSMatic is a web application to generate maps of cities or towns, including index of streets, from OpenStreetMap data.
-Such map can be used for notice board within the camp
-Access the servcie here: http://www.maposmatic.org/
-
-## 6: OSM support resources 
+## 5: OSM support resources 
 
 Generic OSM support resources.
 * OSM Beginner's Guide
@@ -208,3 +203,9 @@ http://www.youtube.com/watch?v=D6pBBK1SHh0
 http://www.youtube.com/watch?v=Oio1jY8WNig
 * Using presets in Potlatch
 http://www.youtube.com/watch?v=YAnt2RSaEEA&fmt=18
+
+#  Create a large ready-to-print city map
+
+MapOSMatic is a web application to generate maps of cities or towns, including index of streets, from OpenStreetMap data.
+Such map can be used for notice board within the camp
+Access the servcie here: http://www.maposmatic.org/

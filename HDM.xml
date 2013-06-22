@@ -31,7 +31,7 @@
                 <text key="note" text="Note" fr.text="Notes"/>
                 <space/>
             </item>
-            <item name="Camp Suburb / sectors/ module -level 1" icon="presets/places.png" type="closedway,relation">
+            <item name="Camp Suburb / sectors/ modules -level 1" icon="presets/places.png" type="closedway,relation">
                 <link href="http://wiki.openstreetmap.org/wiki/Tag:place=suburb" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:place=suburb"/>
                 <label text="Edit Camp Suburb / sector / module"/>
                 <space/>
