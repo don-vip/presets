@@ -1,5 +1,9 @@
 # JOSM presets for Camp mapping
 
+This preset can be used to map a camp in Open Street Map
+
+![ScreenShot](https://github.com/unhcr/presets/blob/master/screenshot.png)
+
 JOSM (Java-based OSM editor) basic editing guide
 
 
