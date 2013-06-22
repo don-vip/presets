@@ -1,6 +1,6 @@
 # JOSM presets for Camp mapping
 
-This preset can be used to map a camp in Open Street Map.
+This preset can be used to map a refugee camp in Open Street Map.
 
 Note that ``` addr:postcode ``` is used to register the Addressing systems as used in UNHCR registration database. This will facilitate export and join with aggregated refugee profile information.
 

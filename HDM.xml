@@ -11,7 +11,7 @@
                 <text key="name" text="Name" default="" delete_if_empty="true"/>
                 <text key="loc_name" text="Name in local language" fr.text="Nom en langue locale" en.text="Name in local language"/>
                 <text key="alt_name" text="Alternative name" fr.text="Nom populaire alternatif" en.text="Alternative name"/>
-                <text key="short_name" text="Abbreviation name" fr.text="Abreviation du nom" en.text="Abbreviation name"/>
+                <text key="short_name" text="Abbreviation name - can be used for ID" fr.text="Abreviation du nom - can be used for ID" en.text="Abbreviation name"/>
                 <text key="old_name" text="Old name" fr.text="Ancien nom" en.text="Old name"/>
                 <space/>
                 <text key="wikipedia" text="Wikipedia" default="" delete_if_empty="true"/>
@@ -42,7 +42,7 @@
                 <text key="name" text="Name" default="" delete_if_empty="true"/>
                 <text key="loc_name" text="Name in local language" fr.text="Nom en langue locale" en.text="Name in local language"/>
                 <text key="alt_name" text="Alternative name" fr.text="Nom populaire alternatif" en.text="Alternative name"/>
-                <text key="short_name" text="Abbreviation name" fr.text="Abreviation du nom" en.text="Abbreviation name"/>
+                <text key="short_name" text="Abbreviation name - can be used for ID" fr.text="Abreviation du nom - can be used for ID" en.text="Abbreviation name"/>
                 <text key="old_name" text="Old name" fr.text="Ancien nom" en.text="Old name"/>
                 <space/>
                 <text key="addr:postcode" text="Post code - UNHCR Registration" default="" delete_if_empty="true"/>
@@ -69,7 +69,7 @@
                 <text key="name" text="Name" default="" delete_if_empty="true"/>
                 <text key="loc_name" text="Name in local language" fr.text="Nom en langue locale" en.text="Name in local language"/>
                 <text key="alt_name" text="Alternative name" fr.text="Nom populaire alternatif" en.text="Alternative name"/>
-                <text key="short_name" text="Abbreviation name" fr.text="Abreviation du nom" en.text="Abbreviation name"/>
+                <text key="short_name" text="Abbreviation name- can be used for ID"  fr.text="Abreviation du nom - can be used for ID" en.text="Abbreviation name"/>
                 <text key="old_name" text="Old name" fr.text="Ancien nom" en.text="Old name"/>
                 <space/>
                 <text key="addr:postcode" text="Post code - UNHCR Registration" default="" delete_if_empty="true"/>
