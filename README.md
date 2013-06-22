@@ -1,10 +1,30 @@
 # JOSM presets for Camp mapping
 
-This preset can be used to map a camp in Open Street Map
+This preset can be used to map a camp in Open Street Map.
+
+Note that "addr:postcode" is used to register the Addressing systems as used in UNHCR registration database. This will facilitate export and join with aggregated refugee profile information.
+
+Administrative levels within the camp are recorded at 2 levels:
+
+For level 1 (Camp sectors or modules)
+``` 
+                <key key="place" value="suburb"/>
+                <key key="admin_level" value="8"/>
+                <key key="boundary" value="administrative"/>
+                <key key="refugee" value="yes"/>
+``` 
+For level 2 (Camp blocks or communities)
+``` 
+                <key key="place" value="neighbourhood"/>
+                <key key="admin_level" value="9"/>
+                <key key="boundary" value="administrative"/>
+                <key key="refugee" value="yes"/>
+``` 
 
 ![ScreenShot](https://github.com/unhcr/presets/blob/master/screenshot.png)
 
-JOSM (Java-based OSM editor) basic editing guide
+
+# JOSM (Java-based OSM editor) basic editing guide
 
 
 ## 1: Create an account
