@@ -1178,90 +1178,7 @@
                     <text key="note" text="Note" fr.text="Notes"/>
                     <space/>
                 </item>
-                <!-- gate -->
-                <!--<item name="Lift Gate" icon="presets/lift_gate.png" type="node">
-<label text="Edit Lift Gate" />
-<space />
-<key key="barrier" value="lift_gate" />
-<label text="Allowed traffic:" />
-<space />
-<check key="foot" text="Foot" default="on" delete_if_empty="true" />
-<check key="bicycle" text="Bicycle" default="on" delete_if_empty="true" />
-<check key="horse" text="Horse" default="off" delete_if_empty="true" />
-<check key="motorcycle" text="Motorcycle" default="off" delete_if_empty="true" />
-<check key="motorcar" text="Motorcar" default="off" delete_if_empty="true" />
 
-</item> 
-<item name="Hampshire Gate" icon="presets/empty.png" type="node">
-<label text="Edit Hampshire Gate" />
-<space />
-<key key="barrier" value="hampshire_gate" />
-<label text="Allowed traffic:" />
-<space />
-<check key="foot" text="Foot" default="on" delete_if_empty="true" />
-<check key="bicycle" text="Bicycle" default="on" delete_if_empty="true" />
-<check key="horse" text="Horse" default="off" delete_if_empty="true" />
-<check key="motorcycle" text="Motorcycle" default="off" delete_if_empty="true" />
-<check key="motorcar" text="Motorcar" default="off" delete_if_empty="true" />
-
-</item> 
-<item name="Bump Gate" icon="presets/empty.png" type="node">
-<label text="Edit Bump Gate" />
-<space />
-<key key="barrier" value="bump_gate" />
-<label text="Allowed traffic:" />
-<space />
-<check key="foot" text="Foot" default="on" delete_if_empty="true" />
-<check key="bicycle" text="Bicycle" default="on" delete_if_empty="true" />
-<check key="horse" text="Horse" default="off" delete_if_empty="true" />
-<check key="motorcycle" text="Motorcycle" default="off" delete_if_empty="true" />
-<check key="motorcar" text="Motorcar" default="off" delete_if_empty="true" />
-
-</item> 
-<item name="Kissing Gate" icon="presets/empty.png" type="node">
-<label text="Edit Kissing Gate" />
-<space />
-<key key="barrier" value="kissing_gate" />
-<label text="Allowed traffic:" />
-<space />
-<check key="foot" text="Foot" default="on" delete_if_empty="true" />
-<check key="bicycle" text="Bicycle" default="off" delete_if_empty="true" />
-
-</item> 
-<item name="Stile" icon="presets/stile.png" type="node">
-<link href="http://wiki.openstreetmap.org/wiki/Tag:highway=stile" />
-<label text="Edit Stile" />
-<space />
-<key key="barrier" value="stile" />
-<label text="Allowed traffic:" />
-<space />
-<check key="foot" text="Foot" default="on" delete_if_empty="true" />
-<check key="bicycle" text="Bicycle" default="off" delete_if_empty="true" />
-
-</item>
-<item name="Turnstile" icon="styles/standard/vehicle/turnstile.png" type="node">
-<label text="Edit Turnstile" />
-<space />
-<key key="barrier" value="turnstile" />
-<label text="Allowed traffic:" />
-<space />
-<check key="foot" text="Foot" default="on" delete_if_empty="true" />
-<check key="bicycle" text="Bicycle" default="off" delete_if_empty="true" />
-
-</item> 
-<item name="Sally Port" icon="styles/standard/vehicle/sally_port.png" type="node">
-<label text="Edit Sally Port" />
-<space />
-<key key="barrier" value="sally_port" />
-<label text="Allowed traffic:" />
-<space />
-<check key="foot" text="Foot" default="on" delete_if_empty="true" />
-<check key="bicycle" text="Bicycle" default="on" delete_if_empty="true" />
-<check key="horse" text="Horse" default="off" delete_if_empty="true" />
-<check key="motorcycle" text="Motorcycle" default="off" delete_if_empty="true" />
-<check key="motorcar" text="Motorcar" default="off" delete_if_empty="true" />
-
-</item> -->
             </group>
             <!-- Barriers -->
             <item name="Obstacles" icon="presets/block.png" type="node,way,closedway,relation">
@@ -2252,45 +2169,6 @@
                     <text key="note" text="Note" fr.text="Notes"/>
                     <space/>
                 </item>
-                <separator/>
-                <item name="Emergency Access Point" icon="styles/standard/service/emergency_access_point.png" type="node,closedway">
-                <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=emergency_access_point"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=emergency_access_point"
-                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=emergency_access_point"
-                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:highway=emergency_access_point"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=emergency_access_point" />
-                <label text="Edit Emergency Access Point" />
-                <space />
-                <key key="highway" value="emergency_access_point" />
-                <text key="ref" text="Point Number" default="" delete_if_empty="true" />
-                <text key="name" text="Name" default="" delete_if_empty="true" />
-                <text key="loc_name" text="Name in local language" fr.text="Nom en langue locale" en.text="Name in local language"/>
-                <label text=" " />
-                <text key="alt_name" text="Alternative name" fr.text="Nom populaire alternatif" en.text="Alternative name"/>
-                <text key="short_name" text="Abbreviation name" fr.text="Abbreviation du nom" en.text="Abbreviation name"/>
-                <text key="old_name" text="Old name" fr.text="Ancien nom" en.text="Old name"/>
-                <label text=" " />
-                <text key="operator" text="Operator" default="" delete_if_empty="true" />
-                <text key="phone" text="Phone Number" default="" delete_if_empty="true" />
-                <label text="(Use international code, like +12-345-67890)" />
-                <space />
-                <label text=" " />
-                <text key="addr:housenumber" text="Building number" fr.text="Numero du batiment " en.text="Building number"/> 
-                <text key="addr:street" text="Street name" use_last_as_default="force" delete_if_empty="true" />
-                <label text=" " />
-                <label text="________________________________________" />
-                <label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
-                <label text=" " />
-                <label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
-                <label text=" " />
-                <text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name" />
-                <label text=" " />
-                <text key="source:date" teXt="source daTE (YYYY-MM-Dd)" fr.teXt="Date de la sourCE (AAAA-MM-Dd)" en.teXt="source daTE (YYYY-MM-DD)"/>
-                <label text="________________________________________" />
-                <label text=" " />
-                <text key="NOTE" text="NOTE" fr.text="NOTES" en.text="NOTE" />
-                <label text=" " />
-                </item>-->
                 <separator/>
                 <item name="Veterinary" icon="styles/standard/health/veterinary.png" type="node">
                     <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=veterinary" da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:amenity=veterinary" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=veterinary" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=veterinary" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=veterinary"/>
@@ -5607,6 +5485,45 @@
         </group>
         <!-- Physical environment -->
         <group name="Hazards" fr.name="Menaces" icon="presets/locality.png">
+			<item name="Emergency Access Point" icon="styles/standard/service/emergency_access_point.png" type="node,closedway">
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:highway=emergency_access_point"
+			  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=emergency_access_point"
+			  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=emergency_access_point"
+			  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:highway=emergency_access_point"
+			  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=emergency_access_point" />
+			<label text="Edit Emergency Access Point" />
+			<space />
+			<key key="highway" value="emergency_access_point" />
+			<text key="ref" text="Point Number" default="" delete_if_empty="true" />
+			<text key="name" text="Name" default="" delete_if_empty="true" />
+			<text key="loc_name" text="Name in local language" fr.text="Nom en langue locale" en.text="Name in local language"/>
+			<label text=" " />
+			<text key="alt_name" text="Alternative name" fr.text="Nom populaire alternatif" en.text="Alternative name"/>
+			<text key="short_name" text="Abbreviation name" fr.text="Abbreviation du nom" en.text="Abbreviation name"/>
+			<text key="old_name" text="Old name" fr.text="Ancien nom" en.text="Old name"/>
+			<label text=" " />
+			<text key="operator" text="Operator" default="" delete_if_empty="true" />
+			<text key="phone" text="Phone Number" default="" delete_if_empty="true" />
+			<label text="(Use international code, like +12-345-67890)" />
+			<space />
+			<label text=" " />
+			<text key="addr:housenumber" text="Building number" fr.text="Numero du batiment " en.text="Building number"/> 
+			<text key="addr:street" text="Street name" use_last_as_default="force" delete_if_empty="true" />
+			<label text=" " />
+			<label text="________________________________________" />
+			<label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)"/>
+			<label text=" " />
+			<label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey"/>
+			<label text=" " />
+			<text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name" />
+			<label text=" " />
+			<text key="source:date" teXt="source daTE (YYYY-MM-Dd)" fr.teXt="Date de la sourCE (AAAA-MM-Dd)" en.teXt="source daTE (YYYY-MM-DD)"/>
+			<label text="________________________________________" />
+			<label text=" " />
+			<text key="NOTE" text="NOTE" fr.text="NOTES" en.text="NOTE" />
+			<label text=" " />
+			</item>-->
+			<separator/>
             <item name="Flood prone" fr.name="Menace d'inondation" en.name="Flood prone">
                 <key key="hazard_prone" value="yes"/>
                 <key key="hazard_type" value="flood"/>
