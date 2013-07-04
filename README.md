@@ -114,42 +114,45 @@ Try clicking View > Wireframe View to have a more stark coloring
 ### 4-2: Load surveyed data with GPS, Walking paper and imagery in JOSM to support your editing
 
 Loading GPX data
-* OSM can leverage the GPX format (XML-based GPS Exchange Format) by providing an easy system for uploading and publishing GPS traces that can then be traced from (OSM encourages tracing in order to clean up GPS data). GPX is a common format of data coming from GPS units, storing coordinate data (waypoints, tracks, and routes) and is supported by many GPS data processing tools. GPS Babel can be used as a GPS data format translator (http://www.gpsbabel.org/)
-* Click File Open a file and navigate to the GPX files resulting from your GPS surveys.
-* Contribute GPX files (tracks and points) to OSM.
-** From JOSM this requires installing the “DirectUpload” plugin
-** You can also upload GPX data directly to the OpenStreetMap.org site 
+    * OSM can leverage the GPX format (XML-based GPS Exchange Format) by providing an easy system for uploading and publishing GPS traces that can then be traced from (OSM encourages tracing in order to clean up GPS data). GPX is a common format of data coming from GPS units, storing coordinate data (waypoints, tracks, and routes) and is supported by many GPS data processing tools. GPS Babel can be used as a GPS data format translator (http://www.gpsbabel.org/)
+    * Click File Open a file and navigate to the GPX files resulting from your GPS surveys.
+    * Contribute GPX files (tracks and points) to OSM.
+    ** From JOSM this requires installing the “DirectUpload” plugin
+    ** You can also upload GPX data directly to the OpenStreetMap.org site 
 
 Loading field papers
-* Create an atlas fitting your area of interest on the field paper web site (http://fieldpapers.org/). 
-* Survey with the paper map (annotation, correcting mistakes, drawing new features). 
-* Scan and upload the annotated map on the field paper web site  
-* In JOSM, walking paper Menu and copy/ paste the URL produced by the WP web site at the end of the upload process
+    * Create an atlas fitting your area of interest on the field paper web site (http://fieldpapers.org/). 
+    * Survey with the paper map (annotation, correcting mistakes, drawing new features). 
+    * Scan and upload the annotated map on the field paper web site  
+    * In JOSM, walking paper Menu and copy/ paste the URL produced by the WP web site at the end of the upload process
 
 Loading imagery for tracing or quality control of GPX based edits
 Open Edit -> preferences and select WMS Plugin Preferences
-*  Upper windows lists the WMS resources activated in JOSM
-*  Lower window lists easy activable WMS resources for JOSM
-*  Check details of the best available imagery for tracing in Haiti on the Imagery section of the WikiProject Haiti:
-    * http://wiki.openstreetmap.org/wiki/WikiProject_Haiti/Imagery_and_data_sources
-* Hit the ADD button and copy/ paste the Name and URL of a WMS resource to your AOI 
+
+    *  Upper windows lists the WMS resources activated in JOSM
+    *  Lower window lists easy activable WMS resources for JOSM
+    *  Check details of the best available imagery for tracing in Haiti on the Imagery section of the WikiProject Haiti:
+    *  http://wiki.openstreetmap.org/wiki/WikiProject_Haiti/Imagery_and_data_sources
+    *  Hit the ADD button and copy/ paste the Name and URL of a WMS resource to your AOI 
+
 The WMS resources is now active in your editing session 
 JOSM -> WMS -> newly added WMS resources to have it as a background support image 
-* It can be used for tracing
-* When the geometric accuracy of the WMS is greater than the GPS, the WMS can be used to run quality control of the edits in conjunction with Walking Papers
+    * It can be used for tracing
+    * When the geometric accuracy of the WMS is greater than the GPS, the WMS can be used to run quality control of the edits in conjunction with Walking Papers
 Optional: Custom Tile urls can also be added using the SlippyMap plugin, see:
     * http://wiki.openstreetmap.org/wiki/JOSM/Plugins/SlippyMap#Custom_tile_URLS
 
 Issue with automatic proxy configuration may hapen. The way we fixed this can be:
-1.  Go to http://wpad/wpad.dat on the computer
-2.  Open the resulting wpad.dat file in a text editor
-3.  Read the proxy setting out of the file
-4.  Open JOSM
-5.  Go to Preferences
-6.  Go to Connection settings
-7.  Go to Proxy settings Tab
-8.  Change to "manually configure a HTTP proxy
-9.  Enter proxy settings from wpad.dat file
+
+ 1.  Go to ```  http://wpad/wpad.dat ```  on the computer
+ 2.  Open the resulting wpad.dat file in a text editor
+ 3.  Read the proxy setting out of the file
+ 4.  Open JOSM
+ 5.  Go to Preferences
+ 6.  Go to Connection settings
+ 7.  Go to Proxy settings Tab
+ 8.  Change to "manually configure a HTTP proxy
+ 9.  Enter proxy settings from wpad.dat file
    
 
 ### 4-3: Focused editing of OSM data
