@@ -2,7 +2,7 @@
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" version="2.2_2013-03-25" author="UNHCR" shortdescription="Data Model for camp mapping" description="Data Model for camp mapping">
   <group name="UNHCR" fr.name="UNHCR-campmapping" en.name="UNHCR-campmapping" icon="icons/shelter.png">
     <!-- Camps and its organisation -->
-    <group name="Refugee Camp and administrative organisation" fr.name="Lieux et organisation administrative" icon="icons/campmgmt.png">
+    <group name="Refugee Camp and administrative organisation" fr.name="Lieux et organisation administrative" icon="https://raw.github.com/unhcr/presets/master/icons/campmgmt.png">
       <item name="Camp location" icon="presets/tent.png" type="node">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:place=town" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:place=town" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:place=town" />
         <label text="Refugee Camp" />
@@ -219,7 +219,7 @@
       </group>
     </group>
     <!-- WatSan -->
-    <group name="Water and sanitation" fr.name="Eau et assainissement" icon="icons/watsan.png">
+    <group name="Water and sanitation" fr.name="Eau et assainissement" icon="https://raw.github.com/unhcr/presets/master/icons/watsan.png">
       <item name="Drinking Water" icon="presets/drinking_water.png" type="node">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=drinking_water" />
         <label text="Edit Drinking Water" />
@@ -700,7 +700,7 @@
       </item>
     </group>
     <!-- Educational facilities -->
-    <group name="Educational facilities" fr.name="Structures pour l'education" en.name="Educational facilities" icon="icons/education.png">
+    <group name="Educational facilities" fr.name="Structures pour l'education" en.name="Educational facilities" icon="https://raw.github.com/unhcr/presets/master/icons/education.png">
       <item name="Kindergarten" fr.name="Kindergarten" en.name="Kindergarten" type="node,relation" icon="presets/kindergarten.png">
         <key key="amenity" value="kindergarten" />
         <link href="http://wiki.openstreetmap.org/wiki/Kindergarten" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity%3Dkindergarten" />
@@ -795,7 +795,7 @@
       </item>
     </group>
     <!-- Heatlh facilities -->
-    <group name="Health facilities" fr.name="Structures de sante" en.name="Health facilities" icon="icons/health.png">
+    <group name="Health facilities" fr.name="Structures de sante" en.name="Health facilities" icon="https://raw.github.com/unhcr/presets/master/icons/health.png">
       <item name="Hospital" fr.name="Hopital" en.name="Hospital" type="node,relation" icon="styles/standard/health/hospital.png">
         <key key="amenity" value="hospital" />
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=hospital" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=hospital" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=hospital" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=hospital" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=hospital" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=hospital" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=hospital" />
@@ -989,7 +989,7 @@
       </item>
     </group>
     <!-- Food Distribution -->
-    <item name="Food distribution Points" de.name="Essenausgabe" fr.name="Point de distribution" icon="icons/food.png" type="node,closedway">
+    <item name="Food distribution Points" de.name="Essenausgabe" fr.name="Point de distribution" icon="https://raw.github.com/unhcr/presets/master/icons/food.png" type="node,closedway">
       <link href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility" />
       <label text="Edit Food bank" de.text="bearbeite Essenausgabe" />
       <space />
@@ -1014,7 +1014,7 @@
       <space />
     </item>
     <!-- Community Services -->
-    <group name="Community Services" fr.name="Services Communautaires" icon="icons/community_services.png">
+    <group name="Community Services" fr.name="Services Communautaires" icon="https://raw.github.com/unhcr/presets/master/icons/community_services.png">
       <item name="Community Centre" fr.name="Centre communautaire" icon="presets/community_centre.png" type="node,closedway">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=community_centre" da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:amenity=community_centre" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=community_centre" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=community_centre" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=community_centre" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=community_centre" />
         <label text="Community Centre" fr.text="centre communautaire" />
@@ -1325,7 +1325,7 @@
       </item>
     </group>
     <!-- Public and governmental facilities -->
-    <group name="Public and government facilities" fr.name="Services publics et gouvernementaux" en.name="Public and government facilities" icon="icons/security.png">
+    <group name="Public and government facilities" fr.name="Services publics et gouvernementaux" en.name="Public and government facilities" icon="https://raw.github.com/unhcr/presets/master/icons/security.png">
       <item name="Town hall" icon="presets/townhall.png" type="node,closedway,relation">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=townhall" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=townhall" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=townhall" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=townhall" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=townhall" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=townhall" />
         <label text="Edit Town hall" />
@@ -1509,7 +1509,7 @@
       </item>
     </group>
     <!-- Office -->
-    <group name="Offices" de.name="Büros" fr.name="Bureaux" ru.name="Офисы" icon="icons/coordination.png">
+    <group name="Offices" de.name="Büros" fr.name="Bureaux" ru.name="Офисы" icon="https://raw.github.com/unhcr/presets/master/icons/coordination.png">
       <item name="Non Government Organisation" de.name="Organisation, nichtstaatlich" fr.name="Organisation non gouvernementale" ru.name="Неправительственное учреждение" icon="icons/ngo.png" type="node,closedway">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Dngo" />
         <label text="Edit Non Government Organisation" de.text="bearbeite Organisation, nichtstaatlich" fr.text="Modifier une Organisation non gouvernementale" />
@@ -2782,7 +2782,7 @@
       </item>
     </group>
     <!-- Power -->
-    <group name="Power" icon="icons/power.png">
+    <group name="Power" icon="https://raw.github.com/unhcr/presets/master/icons/power.png">
       <item name="Power Generator" icon="presets/power.png" type="node,closedway">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:power=generator" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:power=generator" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:power=generator" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:power=generator" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:power=generator" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:power=generator" />
         <label text="Edit Power Generator" />
@@ -2963,7 +2963,7 @@
       </item>
     </group>
     <!-- Shops -->
-    <group name="Shops" fr.name="Commerce" icon="icons/livelihood.png">
+    <group name="Shops" fr.name="Commerce" icon="https://raw.github.com/unhcr/presets/master/icons/livelihood.png">
       <group name="Food+Drinks" icon="presets/restaurant.png">
         <item name="Restaurant" icon="presets/restaurant.png" type="node,relation">
           <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=restaurant" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=restaurant" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=restaurant" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=restaurant" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=restaurant" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=restaurant" />
