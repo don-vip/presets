@@ -220,7 +220,7 @@
     </group>
     <!-- WatSan -->
     <group name="Water and sanitation" fr.name="Eau et assainissement" icon="https://raw.github.com/unhcr/presets/master/icons/watsan.png">
-      <item name="Drinking Water" icon="presets/drinking_water.png" type="node">
+      <item name="Drinking Water" icon="https://raw.github.com/unhcr/presets/master/icons/drinking_water-18.png" type="node">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=drinking_water" />
         <label text="Edit Drinking Water" />
         <key key="amenity" value="drinking_water" />
@@ -251,7 +251,7 @@
         <text key="note" text="Note" fr.text="Notes" />
         <space />
       </item>
-      <item name="Water Well" icon="presets/water_well.png" type="node">
+      <item name="Water Well" icon="https://raw.github.com/unhcr/presets/master/icons/watsan/water_well_pump_manual-18.png" type="node">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=water_well" />
         <label text="** Edit/modify a water well **" fr.text="** Creer/mettre a jour d'un puits d'eau **" en.text="** Edit/modify a water well **" />
         <key key="man_made" value="water_well" />
@@ -358,7 +358,7 @@
         <text key="note" text="Note" fr.text="Notes" />
         <space />
       </item>
-      <item name="Water Tower" icon="presets/water_tower.png" type="node,closedway">
+      <item name="Water Tower" icon="https://raw.github.com/unhcr/presets/master/icons/watsan/water_tower-18.png" type="node,closedway">
         <label text="Edit Water Tower" />
         <key key="man_made" value="water_tower" />
         <text key="name" text="Name" default="" delete_if_empty="true" />
@@ -426,7 +426,7 @@
         <space />
       </item>
       <separator />
-      <item name="Showers" fr.name="Douche" en.name="Showers" type="node,relation" icon="http://commons.wikimedia.org/wiki/File:OCHA_shower_icon.png">
+      <item name="Showers" fr.name="Douche" en.name="Showers" type="node,relation" icon="https://raw.github.com/unhcr/presets/master/icons/watsan/shower-18.png">
         <label text="** Edit/modify showers **" fr.text="** Creer/mettre a jour des douches **" en.text="** Edit/modify showers **" />
         <label text="________________________________________" />
         <label text="SHOWERS" fr.text="DOUCHES" en.text="SHOWERS" />
@@ -464,7 +464,7 @@
         <text key="note" text="Note" fr.text="Notes" />
         <space />
       </item>
-      <item name="Toilets and latrines" fr.name="Toilettes et latrines" en.name="Toilets and latrines" type="node,relation" icon="presets/toilet.png">
+      <item name="Toilets and latrines" fr.name="Toilettes et latrines" en.name="Toilets and latrines" type="node,relation" icon="https://raw.github.com/unhcr/presets/master/icons/watsan/toilets-18.png">
         <key key="amenity" value="toilets" />
         <label text="** Edit/modify toilets/latrines **" fr.text="** Creer/mettre a jour des toilettes/latrines **" en.text="** Edit/modify toilets/latrines **" />
         <label text="________________________________________" />
@@ -527,7 +527,7 @@
         <space />
       </item>
       <separator />
-      <item name="Watermill" icon="styles/standard/misc/landmark/watermill.png" type="node">
+      <item name="Watermill" icon="https://raw.github.com/unhcr/presets/master/icons/watsan/watermill-18.png" type="node,closedway">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=watermill" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:man_made=watermill" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:man_made=watermill" />
         <label text="Edit Watermill" />
         <space />
@@ -666,7 +666,7 @@
         <text key="note" text="Note" fr.text="Notes" />
         <space />
       </item>
-      <item name="Waste Disposal" fr.name="Benne a ordures" icon="styles/standard/service/recycling/trash-bin.png" type="node">
+      <item name="Waste Disposal" fr.name="Benne a ordures" icon="https://raw.github.com/unhcr/presets/master/icons/watsan/waste_basket-18.png" type="node">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwaste_disposal" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity%3Dwaste_disposal" />
         <label text="Edit Waste Disposal" fr.text="Creer ou mettre a jour une benne a ordures" />
         <key key="amenity" value="waste_disposal" />
@@ -682,7 +682,7 @@
         <text key="note" text="Note" fr.text="Notes" />
         <space />
       </item>
-      <item name="Waste Basket" icon="styles/standard/service/recycling/trash-bin.png" type="node">
+      <item name="Waste Basket" icon="https://raw.github.com/unhcr/presets/master/icons/watsan/waste_basket-18.png" type="node">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=waste_basket" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=waste_basket" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=waste_basket" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=waste_basket" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=waste_basket" />
         <label text="Edit Waste Basket" />
         <key key="amenity" value="waste_basket" />
@@ -701,7 +701,7 @@
     </group>
     <!-- Educational facilities -->
     <group name="Educational facilities" fr.name="Structures pour l'education" en.name="Educational facilities" icon="https://raw.github.com/unhcr/presets/master/icons/education.png">
-      <item name="Kindergarten" fr.name="Kindergarten" en.name="Kindergarten" type="node,relation" icon="presets/kindergarten.png">
+      <item name="Kindergarten" fr.name="Kindergarten" en.name="Kindergarten" type="node,relation" icon="https://raw.github.com/unhcr/presets/master/icons/education/education_nursery3.n.16.png">
         <key key="amenity" value="kindergarten" />
         <link href="http://wiki.openstreetmap.org/wiki/Kindergarten" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity%3Dkindergarten" />
         <label text="** Edit/modify a kindergarten **" fr.text="** Creer/mettre a jour un kindergarten **" en.text="** Edit/modify a kindergarten **" />
@@ -731,7 +731,7 @@
         <text key="note" text="Note" fr.text="Notes" />
         <space />
       </item>
-      <item name="School" fr.name="Ecole" en.name="School" type="node,relation" icon="presets/school.png">
+      <item name="School" fr.name="Ecole" en.name="School" type="node,relation" icon="https://raw.github.com/unhcr/presets/master/icons/education/education_school.n.16.png">
         <key key="amenity" value="school" />
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=school" ar.href="http://wiki.openstreetmap.org/wiki/Ar:Tag:amenity=school" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=school" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=school" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=school" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=school" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=school" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=school" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:amenity=school" />
         <label text="** Edit/modify a school **" fr.text="** Creer/mettre a jour une ecole **" en.text="** Edit/modify a school **" />
@@ -763,7 +763,7 @@
         <text key="note" text="Note" fr.text="Notes" />
         <space />
       </item>
-      <item name="College" fr.name="Enseignement superieure" en.name="College" type="node,relation" icon="styles/standard/education/college.png">
+      <item name="College" fr.name="Enseignement superieure" en.name="College" type="node,relation" icon="https://raw.github.com/unhcr/presets/master/icons/education/college.png">
         <key key="amenity" value="college" />
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=college" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=college" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=college" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=college" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=college" />
         <label text="** Edit/modify a college **" fr.text="** Creer/mettre a jour une ecole superieure **" en.text="** Edit/modify a college **" />
@@ -796,7 +796,7 @@
     </group>
     <!-- Heatlh facilities -->
     <group name="Health facilities" fr.name="Structures de sante" en.name="Health facilities" icon="https://raw.github.com/unhcr/presets/master/icons/health.png">
-      <item name="Hospital" fr.name="Hopital" en.name="Hospital" type="node,relation" icon="styles/standard/health/hospital.png">
+      <item name="Hospital" fr.name="Hopital" en.name="Hospital" type="node,relation" icon="https://raw.github.com/unhcr/presets/master/icons/health/hospital.png">
         <key key="amenity" value="hospital" />
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=hospital" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=hospital" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=hospital" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=hospital" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=hospital" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=hospital" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=hospital" />
         <label text="** Edit/modify a health facility **" fr.text="** Creer/mettre a jour une structure de sante **" en.text="** Edit/modify a health facility **" />
@@ -832,7 +832,7 @@
         <text key="note" text="Note" fr.text="Notes" />
         <space />
       </item>
-      <item name="Clinic" icon="styles/standard/health/clinic.png" type="node">
+      <item name="Clinic" icon="https://raw.github.com/unhcr/presets/master/icons/health/clinic.png" type="node">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=clinic" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=clinic" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=clinic" />
         <label text="Edit Clinic" />
         <key key="amenity" value="clinic" />
@@ -856,7 +856,7 @@
         <text key="note" text="Note" fr.text="Notes" />
         <space />
       </item>
-      <item name="Doctors" icon="styles/standard/health/doctor.png" type="node">
+      <item name="Doctors" icon="https://raw.github.com/unhcr/presets/master/icons/health/doctor.png" type="node">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=doctors" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=doctors" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=doctors" />
         <label text="Edit Doctors" />
         <key key="amenity" value="doctors" />
@@ -877,7 +877,7 @@
         <text key="note" text="Note" fr.text="Notes" />
         <space />
       </item>
-      <item name="Dentist" icon="styles/standard/health/dentist.png" type="node">
+      <item name="Dentist" icon="https://raw.github.com/unhcr/presets/master/icons/health/dentist-18.png" type="node">
         <label text="Edit Dentist" />
         <key key="amenity" value="dentist" />
         <text key="name" text="Name" default="" delete_if_empty="true" />
@@ -898,7 +898,7 @@
         <space />
       </item>
       <separator />
-      <item name="Pharmacy" icon="presets/pharmacy.png" type="node">
+      <item name="Pharmacy" icon="https://raw.github.com/unhcr/presets/master/icons//health/pharmacy.png" type="node">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=pharmacy" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=pharmacy" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=pharmacy" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=pharmacy" no.href="http://wiki.openstreetmap.org/wiki/No:Tag:amenity=pharmacy" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=pharmacy" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=pharmacy" />
         <label text="Edit Pharmacy" />
         <key key="amenity" value="pharmacy" />
@@ -966,7 +966,7 @@
         <space />
       </item>
       <separator />
-      <item name="Veterinary" icon="styles/standard/health/veterinary.png" type="node">
+      <item name="Veterinary" icon="https://raw.github.com/unhcr/presets/master/icons//health/veterinary.png" type="node">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=veterinary" da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:amenity=veterinary" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=veterinary" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=veterinary" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=veterinary" />
         <label text="Edit Veterinary" />
         <key key="amenity" value="veterinary" />
@@ -1226,7 +1226,7 @@
       </group>
       <!-- Sport facilities -->
       <group name="Leisure" fr.name="Loisirs" icon="presets/empty.png">
-        <item name="Playground" fr.name="Aire de jeux" icon="styles/standard/leisure/playground.png">
+        <item name="Playground" fr.name="Aire de jeux" icon="https://raw.github.com/unhcr/presets/master/icons/community/leisure/playground-18.png">
           <key key="leisure" value="playground" />
           <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dplayground" />
           <label text="** Edit/modify a playground **" fr.text="** Creer/mettre a jour une aire de jeux **" />
@@ -1325,29 +1325,8 @@
       </item>
     </group>
     <!-- Public and governmental facilities -->
-    <group name="Public and government facilities" fr.name="Services publics et gouvernementaux" en.name="Public and government facilities" icon="icons/security.png">
-      <item name="Town hall" icon="presets/townhall.png" type="node,closedway,relation">
-        <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=townhall" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=townhall" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=townhall" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=townhall" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=townhall" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=townhall" />
-        <label text="Edit Town hall" />
-        <key key="amenity" value="townhall" />
-        <key key="office" value="administrative" />
-        <text key="phone" text="Phone Number" default="" delete_if_empty="true" />
-        <combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true" />
-        <text key="name" text="Name" default="" delete_if_empty="true" />
-        <space />
-        <label text="________________________________________" />
-        <label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)" />
-        <space />
-        <label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey" />
-        <space />
-        <text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name" />
-        <space />
-        <label text="________________________________________" />
-        <space />
-        <text key="note" text="Note" fr.text="Notes" />
-        <space />
-      </item>
-      <item name="Police" icon="styles/standard/service/police.png" type="node,relation">
+    <group name="Public and government facilities" fr.name="Services publics et gouvernementaux" en.name="Public and government facilities" icon="https://raw.github.com/unhcr/presets/master/icons/security.png">
+      <item name="Police" icon="styles/standard/service/police-18.png" type="node,relation">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=police" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=police" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=police" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=police" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=police" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=police" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=police" />
         <label text="Edit Police" />
         <key key="amenity" value="police" />
@@ -1509,7 +1488,7 @@
       </item>
     </group>
     <!-- Office -->
-    <group name="Offices" de.name="Büros" fr.name="Bureaux" ru.name="Офисы" icon="icons/coordination.png">
+    <group name="Offices" de.name="Büros" fr.name="Bureaux" ru.name="Офисы" icon="https://raw.github.com/unhcr/presets/master/icons/coordination.png">
       <item name="Non Government Organisation" de.name="Organisation, nichtstaatlich" fr.name="Organisation non gouvernementale" ru.name="Неправительственное учреждение" icon="icons/ngo.png" type="node,closedway">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Dngo" />
         <label text="Edit Non Government Organisation" de.text="bearbeite Organisation, nichtstaatlich" fr.text="Modifier une Organisation non gouvernementale" />
@@ -1548,6 +1527,27 @@
         <text key="note" text="note" fr.text="notes" en.text="note" />
         <space />
       </item>
+      <item name="Town hall" icon="presets/townhall.png" type="node,closedway,relation">
+        <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=townhall" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=townhall" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=townhall" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=townhall" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=townhall" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=townhall" />
+        <label text="Edit Town hall" />
+        <key key="amenity" value="townhall" />
+        <key key="office" value="administrative" />
+        <text key="phone" text="Phone Number" default="" delete_if_empty="true" />
+        <combo key="operator:type" text="Operator type" fr.text="Type d'operateur" values="government,ngo,un,community,public,private" display_values="government,ngo,un,community,public,private" fr.display_values="gouvernement,ONG,NU,communaute,publique,prive" required="true" />
+        <text key="name" text="Name" default="" delete_if_empty="true" />
+        <space />
+        <label text="________________________________________" />
+        <label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)" />
+        <space />
+        <label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey" />
+        <space />
+        <text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name" />
+        <space />
+        <label text="________________________________________" />
+        <space />
+        <text key="note" text="Note" fr.text="Notes" />
+        <space />
+      </item>
       <item name="Administration" fr.name="Administration" icon="icons/employment_agency.png" type="node,closedway">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Dadministration" />
         <label text="Edit Administration" />
@@ -1555,25 +1555,6 @@
         <key key="office" value="administration" />
         <text key="name" text="Name" default="" delete_if_empty="true" />
         <text key="operator" text="Operator" default="" delete_if_empty="true" />
-        <label text="________________________________________" />
-        <label text="source (geometry and/or attributes)" fr.text="source (geometrique et/ou attributaire)" en.text="source (geometry and/or attributes)" />
-        <space />
-        <label text="if one is already existing, add new after a comma. ex: bing;survey" fr.text="si une source existe deja, ajouter la nouvelle apres une virgule. ex: bing;survey" en.text="if one is already existing, add new one after a comma. ex: bing;survey" />
-        <space />
-        <text key="source" text="source name" fr.text="nom de la source" en.text="source name" />
-        <space />
-        <label text="________________________________________" />
-        <space />
-        <text key="note" text="note" fr.text="notes" en.text="note" />
-        <space />
-      </item>
-      <item name="Employment Agency" de.name="Arbeitsvermittlung" fr.name="Agence pour l'emploi" ru.name="Кадровое агенство" icon="icons/employment_agency.png" type="node,closedway">
-        <link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Demployment_agency" />
-        <label text="Edit Employment Agency" de.text="bearbeite Arbeitsvermittlung" fr.text="Modifier une Agence pour l'emploi" />
-        <space />
-        <key key="office" value="employment_agency" />
-        <text key="name" text="Name" default="" delete_if_empty="true" />
-        <text key="operator" text="Operator" de.text="Betreiber" default="" delete_if_empty="true" />
         <label text="________________________________________" />
         <label text="source (geometry and/or attributes)" fr.text="source (geometrique et/ou attributaire)" en.text="source (geometry and/or attributes)" />
         <space />
@@ -1662,45 +1643,6 @@
         <text key="note" text="note" fr.text="notes" en.text="note" />
         <space />
       </item>
-      <item name="Lawyer" de.name="Rechtsanwalt" fr.name="Juriste" ru.name="Адвокат" icon="icons/lawyer.png" type="node,closedway">
-        <link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Dlawyer" />
-        <label text="Edit Lawyer" de.text="bearbeite Rechtsanwalt" fr.text="Modifier un Juriste" />
-        <space />
-        <key key="office" value="lawyer" />
-        <text key="name" text="Name" default="" delete_if_empty="true" />
-        <combo key="lawyer" text="Lawyer" de.text="Rechtsanwalt" fr.text="Juriste" values=" notary, barrister, solicitor, marble" fr.display_values=" notaire, avocat, huissier de justice, administrateur judiciaire " default="" delete_if_empty="true" />
-        <text key="operator" text="Operator" de.text="Betreiber" default="" delete_if_empty="true" />
-        <label text="________________________________________" />
-        <label text="source (geometry and/or attributes)" fr.text="source (geometrique et/ou attributaire)" en.text="source (geometry and/or attributes)" />
-        <space />
-        <label text="if one is already existing, add new after a comma. ex: bing;survey" fr.text="si une source existe deja, ajouter la nouvelle apres une virgule. ex: bing;survey" en.text="if one is already existing, add new one after a comma. ex: bing;survey" />
-        <space />
-        <text key="source" text="source name" fr.text="nom de la source" en.text="source name" />
-        <space />
-        <label text="________________________________________" />
-        <space />
-        <text key="note" text="note" fr.text="notes" en.text="note" />
-        <space />
-      </item>
-      <item name="Accountant" de.name="Steuerberater" fr.name="Cabinet comptable" ru.name="Бухгалтер" icon="icons/accountant.png" type="node,closedway">
-        <link href="http://wiki.openstreetmap.org/wiki/DE:Tag:office%3Daccountant" />
-        <label text="Edit Accountant" de.text="bearbeite Steuerberater" fr.text="Modifier un Cabinet comptable" />
-        <space />
-        <key key="office" value="accountant" />
-        <text key="name" text="Name" default="" delete_if_empty="true" />
-        <text key="operator" text="Operator" de.text="Betreiber" default="" delete_if_empty="true" />
-        <label text="________________________________________" />
-        <label text="source (geometry and/or attributes)" fr.text="source (geometrique et/ou attributaire)" en.text="source (geometry and/or attributes)" />
-        <space />
-        <label text="if one is already existing, add new after a comma. ex: bing;survey" fr.text="si une source existe deja, ajouter la nouvelle apres une virgule. ex: bing;survey" en.text="if one is already existing, add new one after a comma. ex: bing;survey" />
-        <space />
-        <text key="source" text="source name" fr.text="nom de la source" en.text="source name" />
-        <space />
-        <label text="________________________________________" />
-        <space />
-        <text key="note" text="note" fr.text="notes" en.text="note" />
-        <space />
-      </item>
       <item name="Telecommunication" de.name="Telekommunikationsfirma" fr.name="Entreprise de Télécommunications" ru.name="Телекоммуникационная компания" icon="icons/telecommunication.png" type="node,closedway">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Dtelecommunication" />
         <label text="Edit Telecommunication" de.text="bearbeite Telekommunikationsfirma" />
@@ -1741,9 +1683,28 @@
         <text key="note" text="note" fr.text="notes" en.text="note" />
         <space />
       </item>
+      <item name="Employment Agency" de.name="Arbeitsvermittlung" fr.name="Agence pour l'emploi" ru.name="Кадровое агенство" icon="icons/employment_agency.png" type="node,closedway">
+        <link href="http://wiki.openstreetmap.org/wiki/Tag:office%3Demployment_agency" />
+        <label text="Edit Employment Agency" de.text="bearbeite Arbeitsvermittlung" fr.text="Modifier une Agence pour l'emploi" />
+        <space />
+        <key key="office" value="employment_agency" />
+        <text key="name" text="Name" default="" delete_if_empty="true" />
+        <text key="operator" text="Operator" de.text="Betreiber" default="" delete_if_empty="true" />
+        <label text="________________________________________" />
+        <label text="source (geometry and/or attributes)" fr.text="source (geometrique et/ou attributaire)" en.text="source (geometry and/or attributes)" />
+        <space />
+        <label text="if one is already existing, add new after a comma. ex: bing;survey" fr.text="si une source existe deja, ajouter la nouvelle apres une virgule. ex: bing;survey" en.text="if one is already existing, add new one after a comma. ex: bing;survey" />
+        <space />
+        <text key="source" text="source name" fr.text="nom de la source" en.text="source name" />
+        <space />
+        <label text="________________________________________" />
+        <space />
+        <text key="note" text="note" fr.text="notes" en.text="note" />
+        <space />
+      </item>
     </group>
     <!-- Transportation -->
-    <group name="Transportation" fr.name="Transports" en.name="Transportation" icon="icons/logistic.png" type="way">
+    <group name="Transportation" fr.name="Transports" en.name="Transportation" icon="https://raw.github.com/unhcr/presets/master/icons/logistic.png" type="way">
       <group name="Roads" fr.name="Voirie" en.name="Roads" icon="presets/way_secondary.png">
         <item name="Roads and streets" fr.name="Routes et rues" en.name="Roads and streets" icon="presets/way_secondary.png" type="way">
           <label text="** Edit/modify a road **" fr.text="** Creer/mettre a jour une voie **" en.text="** Edit/modify a road **" />
@@ -1920,51 +1881,6 @@
             <combo key="supervised" text="Supervised" values="yes,no,interval" default="" delete_if_empty="true" />
             <combo key="lit" text="Lit" values="yes,no,interval" default="" delete_if_empty="true" />
             <text key="opening_hours" text="Opening Hours" default="" delete_if_empty="true" />
-            <label text="________________________________________" />
-            <label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)" />
-            <space />
-            <label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey" />
-            <space />
-            <text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name" />
-            <space />
-            <label text="________________________________________" />
-            <space />
-            <text key="note" text="Note" fr.text="Notes" />
-            <space />
-          </item>
-          <item name="Motorcycle Parking" fr.name="Parking pour motos" icon="styles/standard/vehicle/parking/motorbike.png" type="node,relation">
-            <label text="Edit Motorcycle Parking" />
-            <label text="________________________________________" />
-            <label text="ATTRIBUTES" fr.text="ATTRIBUTS" en.text="ATTRIBUTES" />
-            <key key="amenity" value="motorcycle_parking" />
-            <text key="name" text="Name" default="" delete_if_empty="true" />
-            <space />
-            <text key="capacity" text="Capacity" default="" delete_if_empty="true" />
-            <combo key="parking" text="Type" values="multi-storey,surface,underground" default="surface" delete_if_empty="true" />
-            <combo key="fee" text="Fee" values="yes,no" default="" delete_if_empty="true" />
-            <label text="________________________________________" />
-            <label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)" />
-            <space />
-            <label text="If one is already existing, add new after a comma. Ex: Bing;survey" fr.text="Si une source existe deja, ajouter la nouvelle apres une virgule. Ex: Bing;survey" en.text="If one is already existing, add new one after a comma. Ex: Bing;survey" />
-            <space />
-            <text key="source" text="Source name" fr.text="Nom de la source" en.text="Source name" />
-            <space />
-            <label text="________________________________________" />
-            <space />
-            <text key="note" text="Note" fr.text="Notes" />
-            <space />
-          </item>
-          <item name="Bicycle Parking" fr.name="Parking pour velos" icon="styles/standard/vehicle/parking/bicycle.png" type="node,relation">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=bicycle_parking" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=bicycle_parking" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=bicycle_parking" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=bicycle_parking" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=bicycle_parking" />
-            <label text="Edit Bicycle Parking" />
-            <label text="________________________________________" />
-            <label text="ATTRIBUTES" fr.text="ATTRIBUTS" en.text="ATTRIBUTES" />
-            <key key="amenity" value="bicycle_parking" />
-            <text key="name" text="Name" default="" delete_if_empty="true" />
-            <space />
-            <text key="capacity" text="Capacity" default="" delete_if_empty="true" />
-            <combo key="bicycle_parking" text="Type" values="anchors,ground_slots,informal,lockers,shed,sheffield,stands,wall_loops" default="" delete_if_empty="true" />
-            <check key="covered" text="Covered" default="off" delete_if_empty="true" />
             <label text="________________________________________" />
             <label text="SOURCE (geometry and/or attributes)" fr.text="SOURCE (geometrique et/ou attributaire)" en.text="SOURCE (geometry and/or attributes)" />
             <space />
@@ -2726,7 +2642,7 @@
     </group>
     <!-- telecommunication -->
     <group name="Telecommunication" icon="https://raw.github.com/unhcr/presets/master/icons/telecom.png">
-      <item name="Radio or TV studio" fr.name="Studio et station de radio ou television" type="node,relation">
+      <item name="Radio or TV studio" fr.name="Studio et station de radio ou television" type="node,closedway,relation">
         <key key="amenity" value="studio" />
         <combo key="type" text="Type" fr.text="Type" en.text="Type" values="audio,video" display_values="audio,video" fr.display_values="audio,video" en.display_values="audio,video" required="true" />
         <label text="** Edit/modify a radio or television studio **" fr.text="** Creer/mettre a jour un studio de radio ou de television **" en.text="** Edit/modify a radio or television studio **" />
@@ -2755,7 +2671,7 @@
         <text key="note" text="Note" fr.text="Notes" />
         <space />
       </item>
-      <item name="Telecommunication antenna" fr.name="Antenne de telecommunication" type="node,relation">
+      <item name="Telecommunication antenna" fr.name="Antenne de telecommunication" type="node,closedway,relation">
         <key key="man_made" value="tower" />
         <key key="tower:type" value="communication" />
         <label text="** Edit/modify a telecommunication antenna **" fr.text="** Creer/mettre a jour d'une antenne de telecommunication **" en.text="** Edit/modify a telecommunication antenna **" />
