@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" version="2.2_2013-03-25" author="UNHCR" shortdescription="Data Model for camp mapping" description="Data Model for camp mapping">
-  <group name="UNHCR" fr.name="UNHCR-campmapping" en.name="UNHCR-campmapping" icon="icons/shelter.png">
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" version="2.2_2013-03-25" author="UNHCR" shortdescription="A data Model for refugee camp mapping" description="Data Model for refugee camp mapping for humanitarian workers: https://github.com/unhcr/presets">
+  <group name="UNHCR" fr.name="UNHCR-campmapping" en.name="UNHCR-campmapping" icon="https://raw.github.com/unhcr/presets/master/icons/shelter.png">
     <!-- Camps and its organisation -->
     <group name="Refugee Camp and administrative organisation" fr.name="Lieux et organisation administrative" icon="https://raw.github.com/unhcr/presets/master/icons/campmgmt.png">
       <item name="Camp location" icon="presets/tent.png" type="node">
